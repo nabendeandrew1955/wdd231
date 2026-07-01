@@ -26,6 +26,7 @@ header img {
     display: block;
     width: 100%;
     height: auto;
+    padding-bottom: 5px;
 }
 
 header span {
@@ -43,8 +44,13 @@ header span {
 
 }
 
-.hamburger::after {
+.hamburger::before {
     content: "\2630";
     font-size: 2rem;
+
+}
+.hamburger.show::before {
+    content: "\00D7";
+
 
 }
