@@ -3,6 +3,131 @@ terra cotta #E07A5F
 deep slate blue #3D405B
 
 */
+/******************************PERSONAL*************************************/
+ :root {
+     --primary: #4f46e5;
+     --primary-hover: #4338ca;
+     --bg-dark: #1e1e24;
+     --text-main: #333333;
+     --border-color: #e5e7eb;
+ }
+
+ body {
+     font - family: system-ui, -apple-system, sans-serif;
+     margin: 0;
+     padding: 40px 20px;
+     background-color: #f9fafb;
+     color: var(--text-main);
+ }
+
+ .container {
+     max - width: 1100px;
+     margin: 0 auto;
+ }
+
+ h2 {
+     text - align: center;
+     margin-bottom: 30px;
+ }
+
+ /* Filter Menu Styling */
+ .filter-container {
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+     flex-wrap: wrap;
+     margin-bottom: 40px;
+ }
+
+ .filter-btn {
+     background - color: #ffffff;
+     border: 1px solid var(--border-color);
+     padding: 10px 20px;
+     font-size: 14px;
+     font-weight: 600;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: all 0.2s ease;
+ }
+
+ .filter-btn:hover {
+     background - color: #f3f4f6;
+     border-color: #d1d5db;
+ }
+
+ .filter-btn.active {
+     background - color: var(--primary);
+     color: #ffffff;
+     border-color: var(--primary);
+ }
+
+ /* Grid Display Styling */
+ .course-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+     gap: 25px;
+ }
+
+ /* Course Item Cards */
+ .course-card {
+     background: #ffffff;
+     border: 1px solid var(--border-color);
+     border-radius: 12px;
+     padding: 24px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+
+ .course-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+ }
+
+ .course-tag {
+     align - self: flex-start;
+     background-color: #eef2ff;
+     color: var(--primary);
+     font-size: 12px;
+     font-weight: 700;
+     padding: 4px 10px;
+     border-radius: 6px;
+     text-transform: uppercase;
+     margin-bottom: 12px;
+ }
+
+ .course-title {
+     font - size: 18px;
+     font-weight: 700;
+     margin: 0 0 10px 0;
+     line-height: 1.4;
+ }
+
+ .course-desc {
+     color: #6b7280;
+     font-size: 14px;
+     margin-bottom: 20px;
+     line-height: 1.5;
+ }
+
+ .action-btn {
+     background - color: var(--primary);
+     color: white;
+     border: none;
+     padding: 12px;
+     border-radius: 8px;
+     font-weight: 600;
+     cursor: pointer;
+     text-align: center;
+     transition: background-color 0.2s ease;
+     width: 100%;
+ }
+
+ .action-btn:hover {
+     background - color: var(--primary-hover);
+ }
 
 /************************SITE WIDE**********************/
 
