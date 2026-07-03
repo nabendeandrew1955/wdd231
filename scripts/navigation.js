@@ -94,27 +94,33 @@ const totalCreditsDisplay = document.getElementById("total-credits");
 function renderCourses(filteredList) {
     courseGrid.innerHTML = ''; // Wipe out existing structural elements
 
-
     filteredList.forEach(course => {
         const card = document.createElement('div');
         card.className = 'course-card';
 
         card.innerHTML = `
-                        <div>
-                            <span class="course-tag">${course.category}</span>
-                            <h3 class="course-title">${course.title}</h3>
-                            <h4 class="course-number">${course.number}</h4>
-                            <p class="course-desc">${course.desc}</p>
-                            <p class="course-credits"><strong>Credits:</strong> ${course.credits}</p>
-                        
-                        </div>
-                        <button class="action-btn">View Course</button>
+                    <div>
+                        <span class="course-tag">${course.category}</span>
+                        <h3 class="course-title">${course.title}</h3>
+                         <h4 class="course-number">${course.number}</h4>
+                        <p class="course-desc">${course.desc}</p>
+                     <p class="course-credits"><strong>Credits: ${course.credits}</strong></p>
+                    </div>
+                    <button class="action-btn">View Course</button>
                 `;
         courseGrid.appendChild(card);
     });
+
+    const totalCredits = filteredList.reduce((accumulator, currentCourse) => {
+        return accumulator + currentCourse.credits;
+    }, 0);
+
+    totalCreditsDisplay.textContent = `Total Credits Acquired: ${totalCredits}`;
+
+
+
+
 }
-
-
 
 // Logic to toggle selected states and process category checks
 filterButtons.forEach(button => {
@@ -133,8 +139,6 @@ filterButtons.forEach(button => {
             const filtered = courses.filter(item => item.category === selectedCategory);
             renderCourses(filtered);
         }
-        const totalcredits = renderCourses.reduce((accumulator, currentcourse) => { return accumulator + currentcourse.credits }, 0);
-        totalCreditsDisplay.textContent = `Total credits Acquired: ${totalcredits}`
     });
 });
 
