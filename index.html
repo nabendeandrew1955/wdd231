@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Wdd-231 Nabende Andrew Mafabi Home page web design">
+    <meta name="author" content="Nabende Andrew Mfabi">
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -25,10 +27,25 @@
         </ul>
     </nav>
     <main>
-        <h1>Chamber Project</h1>
+        <h1>Home</h1>
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <hr>
+            <div class="inside">
+                <div class="left-inside">
+                    <p>My name is Nabende Andrew Mafabi currently pursuing a Bachelors degree in software Engineering
+                        from BYU-I Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla tempore
+                        possimus aliquam cupiditate est, vero, aperiam harum officiis modi minus laborum illum
+                        veritatis. Quidem, fugiat voluptatibus. In, sit soluta?</p>
+                </div>
+                <div class="right-inside">
+                    <img class="history" src="images/andrew.jpg" alt="andrew photo">
+                </div>
+            </div>
+        </section>
         <div class="container">
-            <h2>Explore Our Courses</h2>
-        
+            <h2>Web Certificate Courses</h2>
+
             <!-- Filter Controls -->
             <div class="filter-container" id="filter-container">
                 <button class="filter-btn active" data-category="all">All Courses</button>
@@ -36,7 +53,7 @@
                 <button class="filter-btn" data-category="Cse Courses">Cse Courses</button>
                 <button class="filter-btn" id="total-credits">Total Credits Done:</button>
             </div>
-        
+
             <!-- Dynamic Output Target -->
             <div class="course-grid" id="course-grid"></div>
             <div class="course-grid" id="total-credits"></div>
