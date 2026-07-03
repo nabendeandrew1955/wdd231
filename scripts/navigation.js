@@ -115,7 +115,7 @@ function renderCourses(filteredList) {
         return accumulator + currentCourse.credits;
     }, 0);
 
-    totalCreditsDisplay.textContent = `Total Credits Acquired: ${totalCredits}`;
+    totalCreditsDisplay.textContent = `Total Credits Required: ${totalCredits}`;
 
 
 
