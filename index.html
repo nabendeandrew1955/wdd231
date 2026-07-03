@@ -26,6 +26,21 @@
     </nav>
     <main>
         <h1>Chamber Project</h1>
+        <div class="container">
+            <h2>Explore Our Courses</h2>
+        
+            <!-- Filter Controls -->
+            <div class="filter-container" id="filter-container">
+                <button class="filter-btn active" data-category="all">All Courses</button>
+                <button class="filter-btn" data-category="Wdd Courses">Wdd Courses</button>
+                <button class="filter-btn" data-category="Cse Courses">Cse Courses</button>
+                <button class="filter-btn" data-category="Total credits done">Total Credits Done:</button>
+            </div>
+        
+            <!-- Dynamic Output Target -->
+            <div class="course-grid" id="course-grid"></div>
+            <div class="course-grid" id="total-credits"></div>
+        </div>
     </main>
     <footer>
         <div class="social">
