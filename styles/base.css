@@ -257,3 +257,20 @@ footer {
 
 
 }
+
+/***************************todays***********************/
+
+.inside {
+    display: flex;
+    width: 100%;
+}
+
+.left-inside {
+    width: 75%;
+    box-sizing: border-box;
+}
+
+.right-inside {
+    width:20%;
+    box-sizing: border-box;
+}
