@@ -13,7 +13,7 @@ deep slate blue #3D405B
  }
 
  body {
-     font - family: system-ui, -apple-system, sans-serif;
+     font-family: system-ui, -apple-system, sans-serif;
      margin: 0;
      padding: 40px 20px;
      background-color: #f9fafb;
@@ -21,12 +21,12 @@ deep slate blue #3D405B
  }
 
  .container {
-     max - width: 1100px;
+     max-width: 1100px;
      margin: 0 auto;
  }
 
  h2 {
-     text - align: center;
+     text-align: center;
      margin-bottom: 30px;
  }
 
@@ -40,7 +40,7 @@ deep slate blue #3D405B
  }
 
  .filter-btn {
-     background - color: #ffffff;
+     background-color: red;
      border: 1px solid var(--border-color);
      padding: 10px 20px;
      font-size: 14px;
@@ -51,12 +51,12 @@ deep slate blue #3D405B
  }
 
  .filter-btn:hover {
-     background - color: #f3f4f6;
+     background-color: #f3f4f6;
      border-color: #d1d5db;
  }
 
  .filter-btn.active {
-     background - color: var(--primary);
+     background-color: var(--primary);
      color: #ffffff;
      border-color: var(--primary);
  }
@@ -87,7 +87,7 @@ deep slate blue #3D405B
  }
 
  .course-tag {
-     align - self: flex-start;
+     align-self: flex-start;
      background-color: #eef2ff;
      color: var(--primary);
      font-size: 12px;
@@ -99,7 +99,7 @@ deep slate blue #3D405B
  }
 
  .course-title {
-     font - size: 18px;
+     font-size: 18px;
      font-weight: 700;
      margin: 0 0 10px 0;
      line-height: 1.4;
@@ -113,7 +113,7 @@ deep slate blue #3D405B
  }
 
  .action-btn {
-     background - color: var(--primary);
+     background-color: var(--primary);
      color: white;
      border: none;
      padding: 12px;
@@ -126,7 +126,7 @@ deep slate blue #3D405B
  }
 
  .action-btn:hover {
-     background - color: var(--primary-hover);
+     background-color: var(--primary-hover);
  }
 
 /************************SITE WIDE**********************/
