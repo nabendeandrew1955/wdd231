@@ -21,6 +21,7 @@ h2 {
     padding: 0.5rem;
     border-radius: 5px;
 }
+
 h4 {
     text-align: center;
     background-color: #154260;
@@ -30,10 +31,10 @@ h4 {
 }
 
 .photo {
-    
+
     margin: 0 auto;
     border: 1px solid rgb(0 0 0 / .2);
-    background-color:red;
+    background-color: red;
     border-radius: 1px;
 }
 
@@ -41,8 +42,8 @@ h1 {
     background-color: #ddd;
     padding: 1rem;
     border-radius: 0.5rem;
-    border: 1px solid rgb(0 0 0 / .2);
-    text-align: center;
+    /* border: 1px solid rgb(0 0 0 / .2); */
+    text-align: left;
 }
 
 h4 {
@@ -50,7 +51,7 @@ h4 {
     font-size: 0.8rem;
 }
 
-.card {
+/* .card {
     border-width: 1px;
     border-style: solid;
     border-color: rgb(21, 66, 96);
@@ -60,7 +61,7 @@ h4 {
     box-sizing: border-box;
     border-radius: 5px;
 
-}
+} */
 
 .left-inside {
     margin: 1rem auto;
@@ -68,7 +69,7 @@ h4 {
     padding: 1rem;
     background-color: #ddd;
     border-radius: 5px;
-    
+
 }
 
 .right-inside {
@@ -79,6 +80,7 @@ h4 {
     border-radius: 5px;
 
 }
+
 .right-inside img {
     width: 100%;
     border-radius: 5px;
@@ -230,6 +232,8 @@ header {
     align-items: end;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
+    background-color: #eee;
+    font-weight: 700;
 }
 
 header img {
@@ -269,6 +273,8 @@ header span {
 /*****************************NAVIGATION**************************/
 .navigation {
     display: none;
+    background-color: #154260;;
+    align-items: center;
 }
 
 .navigation.show {
@@ -285,14 +291,17 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: purple;
+    color: orange;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
-
+    font-weight: 700;
+    text-align: center;
 }
 
+
+
 .navigation li.current {
-    background-color: #eee;
+    background-color: black;
 }
 
 .navigation a:hover {
