@@ -51,7 +51,7 @@ h4 {
     font-size: 0.8rem;
 }
 
-/* .card {
+ .card {
     border-width: 1px;
     border-style: solid;
     border-color: rgb(21, 66, 96);
@@ -123,9 +123,10 @@ h2 {
     flex-wrap: wrap;
     margin-bottom: 40px;
     border-radius: 5px;
+    background-color: var(--primary);
 }
 
-.filter-btn {
+.website {
     background-color: red;
     border: 1px solid var(--border-color);
     padding: 10px 20px;
@@ -136,26 +137,26 @@ h2 {
     transition: all 0.2s ease;
 }
 
-.filter-btn:hover {
+.website:hover {
     background-color: #f3f4f6;
     border-color: #d1d5db;
 }
 
-.filter-btn.active {
+.website.active {
     background-color: var(--primary);
     color: #ffffff;
     border-color: var(--primary);
 }
 
 /* Grid Display Styling */
-.course-grid {
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 25px;
 }
 
 /* Course Item Cards */
-.course-card {
+section {
     background: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: 12px;
@@ -167,7 +168,7 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.course-card:hover {
+section:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
@@ -198,8 +199,8 @@ h2 {
     line-height: 1.5;
 }
 
-.action-btn {
-    background-color: var(--primary);
+.active {
+    background-color: var(--bg-dark);
     color: white;
     border: none;
     padding: 12px;
@@ -208,7 +209,7 @@ h2 {
     cursor: pointer;
     text-align: center;
     transition: background-color 0.2s ease;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .action-btn:hover {
@@ -368,3 +369,6 @@ footer {
     width: 20%;
     box-sizing: border-box;
 }
+
+/*********************more*******************/
+
