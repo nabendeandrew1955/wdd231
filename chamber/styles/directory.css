@@ -1,0 +1,370 @@
+/* -----------------COLOR SCHEME------------------
+terra cotta #E07A5F
+deep slate blue #3D405B
+
+*/
+/******************************PERSONAL*************************************/
+
+main {
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid rgb(0 0 0 / .2);
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #154260;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+h4 {
+    text-align: center;
+    background-color: #154260;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.photo {
+
+    margin: 0 auto;
+    border: 1px solid rgb(0 0 0 / .2);
+    background-color: red;
+    border-radius: 1px;
+}
+
+h1 {
+    background-color: #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    /* border: 1px solid rgb(0 0 0 / .2); */
+    text-align: left;
+}
+
+h4 {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* .card {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(21, 66, 96);
+    border-image: initial;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+} */
+
+.left-inside {
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    border-radius: 5px;
+
+}
+
+.right-inside {
+    margin: 0 auto;
+    /* border: 1px solid rgb(0 0 0 / 0.1); */
+    padding: 1rem;
+    /* background-color: #ddd; */
+    border-radius: 5px;
+
+}
+
+.right-inside img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+/****************************************************************/
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-dark: #1e1e24;
+    --text-main: #333333;
+    --border-color: #e5e7eb;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f9fafb;
+    color: var(--text-main);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Filter Menu Styling */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.filter-btn {
+    background-color: red;
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    background-color: #f3f4f6;
+    border-color: #d1d5db;
+}
+
+.filter-btn.active {
+    background-color: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+}
+
+/* Grid Display Styling */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Course Item Cards */
+.course-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.course-tag {
+    align-self: flex-start;
+    background-color: #eef2ff;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.course-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+.course-desc {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.action-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.action-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+/************************SITE WIDE**********************/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/*********************HEADER******************************/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: #eee;
+    font-weight: 700;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: purple;
+}
+
+/****************HAMBURGER NAVIGATION*****************/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: purple;
+    cursor: pointer;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+
+
+}
+
+/*****************************NAVIGATION**************************/
+.navigation {
+     display: none; 
+    background-color: #154260;
+    align-items: center;
+}
+
+.navigation.show {
+    display: block
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: orange;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+.navigation li.current {
+    background-color: black;
+}
+
+.navigation a:hover {
+    background-color: palegreen;
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+
+/**********************FOOTER***************************/
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+
+
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 33px;
+
+}
+
+.social img {
+    width: 33px;
+    height: 33px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+
+
+}
+
+/***************************todays***********************/
+
+.inside {
+    display: flex;
+    width: 100%;
+}
+
+.left-inside {
+    width: 75%;
+    box-sizing: border-box;
+}
+
+.right-inside {
+    width: 20%;
+    box-sizing: border-box;
+}
