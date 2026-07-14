@@ -17,11 +17,15 @@
     }
 
     .navigation {
-        display: block;
+        display: flex;
+        
+    
     }
 
     .navigation ul {
-        display: flex;
+        display:flex;
+        
+        
     }
 
     .navigation a {
