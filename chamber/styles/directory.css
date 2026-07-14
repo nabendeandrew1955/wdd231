@@ -5,6 +5,22 @@ deep slate blue #3D405B
 */
 /******************************PERSONAL*************************************/
 
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-dark: #1e1e24;
+    --text-main: #333333;
+    --border-color: #e5e7eb;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f9fafb;
+    color: var(--text-main);
+}
+
 main {
     gap: 1rem;
     max-width: 900px;
@@ -20,7 +36,9 @@ h2 {
     color: #ffffff;
     padding: 0.5rem;
     border-radius: 5px;
+    margin-bottom: 30px;
 }
+
 
 h4 {
     text-align: center;
@@ -28,6 +46,7 @@ h4 {
     color: #ffffff;
     padding: 0.5rem;
     border-radius: 5px;
+    font-size: 0.8rem;
 }
 
 .photo {
@@ -46,10 +65,6 @@ h1 {
     text-align: left;
 }
 
-h4 {
-    text-align: center;
-    font-size: 0.8rem;
-}
 
  .card {
     border-width: 1px;
@@ -60,10 +75,11 @@ h4 {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 5px;
+    font-weight: bolder;
 
-} */
+} 
 
-.left-inside {
+/* .left-inside {
     margin: 1rem auto;
     border: 1px solid rgb(0 0 0 / 0.1);
     padding: 1rem;
@@ -85,35 +101,20 @@ h4 {
     width: 100%;
     border-radius: 5px;
 }
-
+ */
 
 
 /****************************************************************/
-:root {
-    --primary: #4f46e5;
-    --primary-hover: #4338ca;
-    --bg-dark: #1e1e24;
-    --text-main: #333333;
-    --border-color: #e5e7eb;
-}
 
-body {
-    font-family: system-ui, -apple-system, sans-serif;
-    margin: 0;
-    padding: 40px 20px;
-    background-color: #f9fafb;
-    color: var(--text-main);
-}
+
+
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
+
 
 /* Filter Menu Styling */
 .filter-container {
@@ -173,7 +174,7 @@ section:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.course-tag {
+/* .course-tag {
     align-self: flex-start;
     background-color: #eef2ff;
     color: var(--primary);
@@ -197,7 +198,7 @@ section:hover {
     font-size: 14px;
     margin-bottom: 20px;
     line-height: 1.5;
-}
+} */
 
 .active {
     background-color: var(--bg-dark);
@@ -309,10 +310,10 @@ header span {
     background-color: palegreen;
 }
 
-h1 {
+/* h1 {
     padding-left: 10px;
 }
-
+ */
 
 /**********************FOOTER***************************/
 
@@ -355,7 +356,7 @@ footer {
 
 /***************************todays***********************/
 
-.inside {
+/* .inside {
     display: flex;
     width: 100%;
 }
@@ -368,7 +369,112 @@ footer {
 .right-inside {
     width: 20%;
     box-sizing: border-box;
-}
+} */
 
 /*********************more*******************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: #333;
+    color: #eee;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
+    background-color: #fff;
+    font-family: Acme, Arial, sans-serif;
+}
+
+.menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: #333;
+    text-align: center;
+
+    button {
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+    }
+}
+
+section {
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 0.5rem;
+    background-color: #ddd;
+
+    a {
+        font-family: Arial, sans-serif;
+        font-size: 0.85rem;
+        color: navy;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+
+    section {
+        text-align: center;
+
+        &>* {
+            margin: 0.1rem;
+        }
+    }
+
+    img {
+        border: 1px solid #fff;
+        box-shadow: 0 0 1rem #555;
+    }
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+
+        &>* {
+            margin: 0 1rem;
+        }
+
+        img {
+            display: none;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        &:nth-child(even) {
+            background-color: #bbb;
+        }
+    }
+}
+
+img {
+    width: auto;
+    height: 75px;
+}
 
