@@ -460,7 +460,7 @@ h3 {
         }
 
         img {
-            display: none;
+            display: block;
         }
 
         h3 {
