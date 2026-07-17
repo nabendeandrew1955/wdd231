@@ -3,6 +3,8 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
+
+
 const mykey = "045fe0b9399a754d351a447d1a248004"
 const mylat = "49.78"
 const mylog = "6.45"
@@ -23,5 +25,17 @@ async function apiFetch() {
         console.log(error);
     }
 }
+// Display The json Data onto my web page
+function displayResults(data) {
+    console.log('Hello!');
+    captionDesc.innerHTML = data.weather[0].description;
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
 
+    const iconsrc = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}%402x.png`;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', data.weather[0].description);
+
+
+}
+// Start The Process
 apiFetch();
