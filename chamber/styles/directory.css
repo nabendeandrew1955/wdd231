@@ -93,18 +93,18 @@ h1 {
 .right-inside {
     margin: 0 auto;
     /* border: 1px solid rgb(0 0 0 / 0.1); */
-padding: 1rem;
+/* padding: 1rem; */
 /* background-color: #ddd; */
-border-radius: 5px;
+/* border-radius: 5px; */
 
-}
+
 
 .right-inside img {
     width: 100%;
     border-radius: 5px;
 }
 
-*/
+
 /****************************************************************/
 
 
@@ -393,34 +393,40 @@ main {
     background-color: #fff;
     font-family: Acme, Arial, sans-serif;
 }
-
+/********correction***********/
 .menu {
     margin: 1rem auto;
     padding: 0.5rem;
     background-color: #333;
     text-align: center;
 
-    button {
-        padding: 0.5rem 1rem;
-        font-weight: 700;
-    }
+    
 }
+
+button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+}
+
 
 section {
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 0.5rem;
     background-color: #ddd;
-
-    a {
-        font-family: Arial, sans-serif;
-        font-size: 0.85rem;
-        color: navy;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
+    
 }
+/************corection*************/
+
+a {
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
 
 .grid {
     display: grid;
