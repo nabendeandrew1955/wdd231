@@ -506,14 +506,6 @@ img {
 
 
 
-/* header,
-main,
-footer {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 1rem;
-} */
 
 
 
@@ -546,7 +538,7 @@ footer {
     margin: 10px auto;
     border-radius: 1rem;
     position: absolute;
-    top: 10rem;
+    top: 20rem;
     left: 20rem;
 }
 
@@ -560,8 +552,8 @@ footer {
     color: white;
     border-radius: 1rem;
     position: absolute;
-    bottom: 3rem;
-    right: 35rem;
+    bottom: 2rem;
+    right: 43rem;
 
 }
 
