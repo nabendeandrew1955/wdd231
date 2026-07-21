@@ -38,7 +38,7 @@ function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     base.innerHTML = data.sys.country;
 
-    const iconsrc = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}%402x.png`;
+    const iconsrc = `//openweathermap.org/payload/api/media/file/${data.weather[0].icon}%402x.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
 
