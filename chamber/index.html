@@ -7,7 +7,7 @@
     <meta name="description" content="Wdd-231 Nabende Andrew Mafabi Home page web design">
     <meta name="author" content="Nabende Andrew Mfabi">
     <title>Home Page for Directory</title>
-     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-larger.css">
     <script src="scripts/w2eather.js" defer></script>
@@ -39,16 +39,69 @@
         </ul>
     </nav>
     <main>
-        <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
-        <div class="card">
-            <h2 id="town"></h2>
-            <figure>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-            </figure>
-            <p id="description"></p>
-            <p id="current-temp"></p>
+        <div class="hero">
+            <picture>
+                <source media="(min-width:1000px )" srcset="images/uganda-big.webp">
+                <source media="(min-width: )" srcset="images/uganda-medium.webp">
+                <img src="images/uganda-small.webp" alt="Lake Victoria view" width="500" height="250">
+            </picture>
+            <div id="data-table">
+                <h2 id="town"></h2>
+                <div class="datatable">
+                    <div class="row">
+                        <div class="col-label">Area:</div>
+                        <div class="col-data">241,553 sq Km</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Population:</div>
+                        <div class="col-data">44,387,526 million</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Capital:</div>
+                        <div class="col-data">Kampala</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Languages:</div>
+                        <div class="col-data">English</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Currency:</div>
+                        <div class="col-data">Ugandan Shilling</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Time Zone:</div>
+                        <div class="col-data">G.M.T +3</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Calling Code:</div>
+                        <div class="col-data">+256</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Internet TLD:</div>
+                        <div class="col-data">.MG</div>
+                    </div>
+                </div>
+            </div>
+            <div id="weather">
+                <div id="weather-table">
+                    <h2 id="town">Weather</h2>
+                    <figure>
+                        <img src="images/weather-2icon.svg" alt="weather icon" width="100px" height="100px">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div class="datatable">
+                    <div class="row">
+                        <div class="col-label">Temperature</div>
+                        <div class="col-data" id="current-temp">:&deg;F</div>
+                    </div>
+
+
+                </div>
+
+            </div>
         </div>
+
 
     </main>
     <footer>
