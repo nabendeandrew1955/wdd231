@@ -434,50 +434,16 @@ h3 {
     grid-gap: 5px;
     align-items: center;
 
-    section {
-        text-align: center;
-
-        &>* {
-            margin: 0.1rem;
-        }
-    }
-
-    img {
-        border: 1px solid #fff;
-        box-shadow: 0 0 1rem #555;
-    }
 }
 
 h3 {
     font-size: 1.2rem;
 }
 
+
 .list {
     display: flex;
     flex-direction: column;
-
-    section {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        margin: 0;
-        padding: 0.25rem;
-
-        &>* {
-            margin: 0 1rem;
-        }
-
-        img {
-            display: block;
-        }
-
-        h3 {
-            font-size: 1rem;
-        }
-
-        &:nth-child(even) {
-            background-color: #bbb;
-        }
-    }
 }
 
 img {
