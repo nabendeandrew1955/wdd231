@@ -1,3 +1,4 @@
+
 const navbutton = document.querySelector('#ham-btn');
 const navlinks = document.querySelector('#nav-bar');
 let d = new Date();
@@ -18,8 +19,6 @@ navbutton.addEventListener('click', () => {
 
 
 // Array holding exactly 10 raw data objects
-
-
 const courses = [
     {
         category: "Wdd Courses",
@@ -87,30 +86,42 @@ const courses = [
 
 ];
 
-
-
-const courseList = document.querySelector('#course-grid');
-const totalCredits = document.querySelector('#total-credits');
+const courseGrid = document.getElementById('course-grid');
 const filterButtons = document.querySelectorAll('.filter-btn');
+const totalCreditsDisplay = document.getElementById("total-credits");
 
-function displayCourses(courseArray) {
-    courseList.innerHTML = '';
+// Logic to construct and display items inside the DOM
+function renderCourses(filteredList) {
+    courseGrid.innerHTML = ''; // Wipe out existing structural elements
 
-    courseArray.forEach((course) => {
-        const courseCard = document.createElement('div');
+    filteredList.forEach(course => {
+        const card = document.createElement('div');
+        card.className = 'course-card';
 
-        courseCard.className = course.completed ? 'course-card completed' : 'course-card';
-        courseCard.innerHTML = `
-      ${course.category} ${course.number}
-      <span>${course.completed ? 'Completed' : 'Not completed'}</span>
-    `;
-
-        courseList.appendChild(courseCard);
+        card.innerHTML = `
+                    <div>
+                        <span class="course-tag">${course.category}</span>
+                        <h3 class="course-title">${course.title}</h3>
+                         <h4 class="course-number">${course.number}</h4>
+                        <p class="course-desc">${course.desc}</p>
+                     <p class="course-credits"><strong>Credits: ${course.credits}</strong></p>
+                    </div>
+                    <button class="action-btn">View Course</button>
+                `;
+        courseGrid.appendChild(card);
     });
 
-    const credits = courseArray.reduce((total, course) => total + course.credits, 0);
-    totalCredits.textContent = `Total Credits: ${credits}`;
+    const totalCredits = filteredList.reduce((accumulator, currentCourse) => {
+        return accumulator + currentCourse.credits;
+    }, 0);
+
+    totalCreditsDisplay.textContent = `Total Credits Required: ${totalCredits}`;
+
+
+
+
 }
+
 // Logic to toggle selected states and process category checks
 filterButtons.forEach(button => {
     button.addEventListener('click', (e) => {
@@ -123,51 +134,15 @@ filterButtons.forEach(button => {
 
         // Switch statement matching criteria
         if (selectedCategory === 'all') {
-            displayCourses(courses);
+            renderCourses(courses);
         } else {
             const filtered = courses.filter(item => item.category === selectedCategory);
-            displayCourses(filtered);
+            renderCourses(filtered);
         }
     });
 });
 
 // Initialize the view with all 10 items present
-displayCourses(courses);
+renderCourses(courses);
 
-
-
-
-
-
-
-
-
-
-
-
-
-// function setActiveButton(selectedButton) {
-//     filterButtons.forEach((button) => {
-//         button.classList.remove('active-filter');
-//         button.setAttribute('aria-pressed', 'false');
-//     });
-
-//     selectedButton.classList.add('active-filter');
-//     selectedButton.setAttribute('aria-pressed', 'true');
-// }
-
-// filterButtons.forEach((button) => {
-//     button.addEventListener('click', () => {
-//         setActiveButton(button);
-
-//         const filter = button.dataset.filter;
-//         const filteredCourses = filter === 'all'
-//             ? courses
-//             : courses.filter((course) => course.subject === filter);
-
-//         displayCourses(filteredCourses);
-//     });
-// });
-
-// displayCourses(courses);
 
