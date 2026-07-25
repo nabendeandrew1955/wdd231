@@ -45,14 +45,14 @@
             <form method="get" action="thankyou.html" class="nabs">
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label>First Name*<input type="text" name="fname" id="fnmame" required></label>
-                    <label>Last Name*<input type="text" name="lname" required></label>
-                    <label>Phone<input type="tel" name="phone" placeholder="123555123"></label>
-                    <label>Email<input type="email" name="email" placeholder="someone@byupathway.edu" required></label>
+                    <label>First Name*<input type="text" name="fname" id="fnmame" autocomplete="given-name" required></label>
+                    <label>Last Name*<input type="text" name="lname" id="lname" autocomplete="family-name" required></label>
+                    <label>Phone<input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="123555123"></label>
+                    <label>Email<input type="email" name="email" id="email" autocomplete="email" placeholder="someone@byupathway.edu" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Information</legend>
-                    <label>Business / Organization<input type="text" name="bname" required></label>
+                    <label>Business / Organization<input type="text" name="bname" id="bname" autocomplete="organization-title" required></label>
                     <div>Membership Level</div>
                     <label><input type="radio" name="Membership" value="Np">Np</label>
                     <label><input type="radio" name="Membership" value="gold">Gold</label>
@@ -61,11 +61,11 @@
                 </fieldset>
                 <fieldset>
                     <legend>Business Description</legend>
-                    <label><textarea name="feedback" placeholder="feedback" cols="50" rows="10" wrap="hard"></textarea></label>
+                    <label><textarea name="feedback" placeholder="feedback" id="feedback" cols="50" rows="10" wrap="hard"></textarea></label>
                 </fieldset>
                 <fieldset>
                     <legend>Time Stamp</legend>
-                    <label>Application Date<input type="date" name="applicationdate"></label>
+                    <label>Application Date<input type="date" id="date" name="date"></label>
                 </fieldset>
                 <input type="submit" value="Register">
         
