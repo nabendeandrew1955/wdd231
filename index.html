@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dialog.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -61,19 +62,29 @@
             <h2>Web Certificate Courses</h2>
 
             <!-- Filter Controls -->
-            <div class="filter-container" id="filter-container">
+             <div class="filter-container" id="filter-container">
                 <button class="filter-btn active" data-category="all">All Courses</button>
                 <button class="filter-btn" data-category="Wdd Courses">Wdd Courses</button>
                 <button class="filter-btn" data-category="Cse Courses">Cse Courses</button>
-                <h2 id="total-credits">Total Credits Done:</h2>
-               
-            </div>
-            <dialog id="course-details"></dialog>
+                <h2 id="total-credits">Total Credits Done:</h2> 
 
+            </div>
             <!-- Dynamic Output Target -->
-            <div class="course-grid" id="course-grid"></div>
-            <!-- <div class="course-grid" id="total-credits"></div> -->
+            <div class="course-grid" id="course-grid">
+                <button>X</button>
+                <div id="course-details"></div>
+            </div>
+            <div class="course-grid" id="total-credits">
+            </div>
         </section>
+        <dialog id="course-details">
+            <h2></h2>
+            <h3></h3>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </dialog>
     </main>
     <footer>
         <div class="social">

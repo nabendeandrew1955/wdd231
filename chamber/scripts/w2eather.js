@@ -46,3 +46,26 @@ function displayResults(data) {
 }
 // Start The Process
 apiFetch();
+
+/********************join.html*************************/
+
+// const getstring = window.location.search;
+// console.log(getstring);
+
+const myinfo = new URLSearchParams(window.location.search);
+
+// console.log(myinfo);
+
+// console.log(myinfo.get('fname'));
+// console.log(myinfo.get('lname'));
+// console.log(myinfo.get('ordinance'));
+// console.log(myinfo.get('applicationdate'));
+// console.log(myinfo.get('Membership'));
+// console.log(myinfo.get('phone'));
+// console.log(myinfo.get('email'));
+
+document.querySelector('#results').innerHTML = `
+<p>Appointment for ${myinfo.get('first')} ${myinfo.get('last')}</p>
+<p>Proxy ${myinfo.get('ordinance')} on ${myinfo.get('date')} in the ${myinfo.get('location')}</p>
+<p>Your phone: ${myinfo.get('phone')}</p>
+<p>Your email is ${myinfo.get('email')}</p>
