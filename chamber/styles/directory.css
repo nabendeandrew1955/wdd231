@@ -857,3 +857,21 @@ h2 {
     padding: 10px;
     color: #375170;
 }
+
+.Membership {
+    display: flex;
+    flex-direction: row;
+}
+
+.gold {
+    display: block;
+    border: 1px solid rgb(0 0 0 /0.2);
+    border-radius: 0.5rem;
+    margin: 10px;
+    background-color: var(--accent2-color);
+    padding: 10px;
+    text-align: center;
+    background-color: #95e916;
+
+
+}
