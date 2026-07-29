@@ -51,14 +51,14 @@
                     <label>Last Name*<input type="text" name="lname" id="lname" autocomplete="family-name" required
                             title="enter your last name"></label>
                     <label>Phone<input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="123555123"
-                            title="123555123"></label>
+                            title="123555123" required></label>
                     <label>Email<input type="email" name="email" id="email" autocomplete="email"
                             placeholder="someone@byupathway.edu" required title="enter a valid email address"></label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Information</legend>
                     <label>Business / Organization<input type="text" name="title" id="title"
-                            autocomplete="organization-title" required pattern="[A-Za-z\s\-]{7,}"
+                            autocomplete="organization" required pattern="[A-Za-z\s\-]{7,}"
                             title="must contain atleast 7 characters(letters, hyphens, spaces only)"></label>
                     <div>Membership Level</div>
                     <label><input type="radio" name="Membership" id="1openButton1" value="Np">Np</label>
@@ -73,7 +73,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Time Stamp</legend>
-                    <label>Application Date<input type="date" id="date" name="date"></label>
+                    <label>Application Date<input type="date" id="time" name="time"></label>
                 </fieldset>
                 <input type="submit" value="Register">
 
