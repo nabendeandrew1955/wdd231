@@ -1,7 +1,7 @@
-import { temples } from '../data/temples.js'
+import {temples} from '../data/temples.js'
 //console.log(temples)
 
-import {url } from '../data/temples.js'
+import {url} from '../data/temples.js'
 //console.log(url)
 
 // Grab a reference to a division where to display items
@@ -11,7 +11,7 @@ const mytitle = document.querySelector('#mydialog h2')
 const myinfo = document.querySelector('#mydialog p')
 const myclose = document.querySelector('#mydialog button')
 
-myclose.addEventListener('click', () => mydialog.close())
+myclose.addEventListener('click', () => { mydialog.close() })
 
 // A loop through the Array of Json Items
 function displayItems(data) {
@@ -34,8 +34,6 @@ displayItems(temples)
 //populate The Dialog with information when image is clicked
 function showStuff(x) {
     mytitle.innerHTML = x.name;
-    mydialog.showModal()
+    mydialog.showModal
 }
-
-
 
