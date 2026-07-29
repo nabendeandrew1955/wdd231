@@ -71,20 +71,7 @@ document.querySelector('#results').innerHTML = `
 <p>Your email is ${myinfo.get('email')}</p>`
 
 /****************************dialog*************************************/
-const openButton = document.querySelector("#openButton")
-const openButton2 = document.querySelector("#openButton2")
-const openButton3 = document.querySelector("#openButton3")
-const openButton4 = document.querySelector("#openButton4")
 
-const dialogBox = document.querySelector("#mydialog")
-const dialogBoxText = document.querySelector("#mydialog div")
-const myTitle = document.querySelector("#mydialog h2")
-const myInfo = document.querySelector("#mydialog p")
-const closeButton = document.querySelector("#closeButton")
-
-openButton.addEventListener("click", () => {
-    dialogBox.showModal()
-});
 
 // openButton2.addEventListener('click', () => {
 //     myTitle.innerHTML = Gold Membership
@@ -118,6 +105,3 @@ openButton.addEventListener("click", () => {
 
 
 
-closeButton.addEventListener('click', () => {
-    dialogBox.close();
-});
