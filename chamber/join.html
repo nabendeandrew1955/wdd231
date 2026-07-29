@@ -46,29 +46,30 @@
             <form method="get" action="thankyou.html" class="nabs">
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label>First Name*<input type="text" name="fname" id="fnmame" autocomplete="given-name"
-                            required></label>
-                    <label>Last Name*<input type="text" name="lname" id="lname" autocomplete="family-name"
-                            required></label>
-                    <label>Phone<input type="tel" name="phone" id="phone" autocomplete="tel"
-                            placeholder="123555123"></label>
+                    <label>First Name*<input type="text" name="fname" id="fnmame" autocomplete="given-name" required
+                            title="enter your first name"></label>
+                    <label>Last Name*<input type="text" name="lname" id="lname" autocomplete="family-name" required
+                            title="enter your last name"></label>
+                    <label>Phone<input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="123555123"
+                            title="123555123"></label>
                     <label>Email<input type="email" name="email" id="email" autocomplete="email"
-                            placeholder="someone@byupathway.edu" required></label>
+                            placeholder="someone@byupathway.edu" required title="enter a valid email address"></label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Information</legend>
-                    <label>Business / Organization<input type="text" name="bname" id="bname"
-                            autocomplete="organization-title" required></label>
+                    <label>Business / Organization<input type="text" name="title" id="title"
+                            autocomplete="organization-title" required pattern="[A-Za-z\s\-]{7,}"
+                            title="must contain atleast 7 characters(letters, hyphens, spaces only)"></label>
                     <div>Membership Level</div>
-                    <label><input type="radio" name="Membership" id="openButton1" value="Np">Np</label>
-                    <label><input type="radio" name="Membership" id="openButton2" value="gold">Gold</label>
-                    <label><input type="radio" name="Membership" id="openButton3" value="silver">Silver</label>
-                    <label><input type="radio" name="Membership" id="openButton4" value="bronze">Bronze</label>
+                    <label><input type="radio" name="Membership" id="1openButton1" value="Np">Np</label>
+                    <label><input type="radio" name="Membership" id="1openButton2" value="gold">Gold</label>
+                    <label><input type="radio" name="Membership" id="1openButton3" value="silver">Silver</label>
+                    <label><input type="radio" name="Membership" id="1openButton4" value="bronze">Bronze</label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Description</legend>
-                    <label><textarea name="feedback" placeholder="feedback" id="feedback" cols="50" rows="10"
-                            wrap="hard"></textarea></label>
+                    <label><textarea name="feedback" placeholder="feedback" title="business description" id="feedback"
+                            cols="50" rows="10" wrap="hard"></textarea></label>
                 </fieldset>
                 <fieldset>
                     <legend>Time Stamp</legend>
@@ -79,18 +80,30 @@
             </form>
         </div>
         <h2>Uganda Chamber of commerce Membership Cards</h2>
-
-        <div>
-            <button class="" id="openButton">Np Card</button>
-            <button class="" id="openButton2">Gold Card</button>
-            <button class="" id="openButton3">Silver Card</button>
-            <button class="" id="openButton4">Bronze Card</button>
+        <div class="Membership">
+            <div class="gold">
+                <h3>Non profit membership (free)</h3>
+                <button class="" id="openButton">View Np Card</button>
+            </div>
+            <div class="gold">
+                <h3>Gold Membership</h3>
+                <button class="" id="openButton2">View Gold Card</button>
+            </div>
+            <div class="gold">
+                <h3>Silver Membership</h3>
+                <button class="" id="openButton3">View Silver Card</button>
+            </div>
+            <div class="gold">
+                <h3>Bronze membership</h3>
+                <button class="" id="openButton4"> View Bronze Card</button>
+            </div>
             <dialog id="mydialog">
                 <div>
-                    <h2>Test example</h2>
-                    <button id="closeButton">❌</button>
+                    <h2></h2>
+                    <button id="closeButton">&times;</button>
                 </div>
                 <p></p>
+
             </dialog>
         </div>
 
