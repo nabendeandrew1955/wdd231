@@ -14,7 +14,7 @@ deep slate blue #3D405B
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 40px 20px;
     background-color: #f9fafb;
@@ -393,6 +393,7 @@ main {
     background-color: #fff;
     font-family: Acme, Arial, sans-serif;
 }
+
 /********correction***********/
 .menu {
     margin: 1rem auto;
@@ -400,7 +401,7 @@ main {
     background-color: #333;
     text-align: center;
 
-    
+
 }
 
 button {
@@ -413,8 +414,9 @@ section {
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 0.5rem;
     background-color: #ddd;
-    
+
 }
+
 /************corection*************/
 
 a {
@@ -821,14 +823,17 @@ h2 {
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: .25rem;
     padding: 1rem;
-    background-color: #fff;
+    position: absolute;
+    bottom:20px;
+    right: 20px;
+    background-color: rgba(36, 34, 32);
     box-shadow: 0 0 3rem #777;
     width: 90%;
     max-width: 600px;
 }
 
 ::backdrop {
-    background-color: rgb(0 0 0 / 50%);
+    background-color: rgba(61, 138, 143, 0.758);
 }
 
 #mydialog button {
@@ -842,20 +847,23 @@ h2 {
 #mydialog dv {
     display: grid;
     grid-template-columns: auto 44px;
-    background-color: #ddd;
+    background-color: #4f46e5;
     padding: 5px;
     border-bottom: #aaa 1px solid;
 
 }
 
+
 #mydialog h2 {
     margin: 0;
     color: 275690;
-    
+
 }
+
 #mydialog p {
     padding: 10px;
-    color: #375170;
+    color:red;
+    /* color: #375170; */
 }
 
 .Membership {
@@ -868,10 +876,17 @@ h2 {
     border: 1px solid rgb(0 0 0 /0.2);
     border-radius: 0.5rem;
     margin: 10px;
-    background-color: var(--accent2-color);
+    /* background-color: var(--accent2-color); */
     padding: 10px;
     text-align: center;
     background-color: #95e916;
 
 
 }
+
+
+/* #openButton { background-color: aqua;}
+#openButton2 { background-color: lawngreen;}
+#openButton3 {background-color: indigo;}
+#openButton4 {background-color: violet;}
+  */
