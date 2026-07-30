@@ -14,8 +14,8 @@ const mylat = "1.512485"
 const mylog = "32.395955"
 const mycnt = 3
 
-const myurl = `//api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylog}&"units=imperial"&appid=${mykey}&units=imperial`;
-//const myurl = `//api.openweathermap.org/data/2.5/forecast/daily?lat=${mylat}&lon=${mylog}&cnt=${mycnt}&appid=${mykey}`;
+ const myurl = `//api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylog}&"units=imperial"&appid=${mykey}&units=imperial`;
+// const myurl = `//api.openweathermap.org/data/2.5/forecast/daily?lat=${mylat}&lon=${mylog}&cnt=${mycnt}&appid=${mykey}&units=imperial`;
 
 async function apiFetch() {
     try {
@@ -33,12 +33,12 @@ async function apiFetch() {
 }
 // Display The json Data onto my web page
 function displayResults(data) {
-    console.log('Hello!');
-    captionDesc.innerHTML = data.weather[0].description;
+    // console.log('Hello!');
+    captionDesc.innerHTML = `<strong>${data.weather[0].description}</strong>`;
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     base.innerHTML = data.sys.country;
 
-    const iconsrc = `//openweathermap.org/payload/api/media/file/${data.weather[0].icon}%402x.png`;
+    const iconsrc = ` https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
 

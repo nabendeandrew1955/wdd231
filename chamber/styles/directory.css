@@ -490,10 +490,26 @@ img {
     width: 100%;
     height: auto;
 }
+#weather-table {
+    border: 1px solid #5d6f67;
+    background-color: #f6f0da;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.col2-data {
+    font-size: 2rem;
+    color: white;
+    margin: .3rem 0;
+
+
+}
 
 #weather img {
     max-width: 50px;
     height: auto;
+    
 }
 
 .hero {
@@ -512,9 +528,10 @@ img {
     color: white;
     margin: 10px auto;
     border-radius: 1rem;
-    position: absolute;
+    position:absolute;
     top: 20rem;
     left: 20rem;
+    
 }
 
 #weather {
@@ -524,9 +541,9 @@ img {
     border: 1px solid rgb(0 0 0 / .2);
     padding: 1rem;
     margin: 10px auto;
-    color: white;
+    color: green;
     border-radius: 1rem;
-    position: absolute;
+    position:absolute;
     bottom: 2rem;
     right: 43rem;
 
@@ -824,7 +841,7 @@ h2 {
     border-radius: .25rem;
     padding: 1rem;
     position: absolute;
-    bottom:20px;
+    bottom: 20px;
     right: 20px;
     background-color: rgba(36, 34, 32);
     box-shadow: 0 0 3rem #777;
@@ -862,7 +879,7 @@ h2 {
 
 #mydialog p {
     padding: 10px;
-    color:red;
+    color: red;
     /* color: #375170; */
 }
 
@@ -883,7 +900,11 @@ h2 {
 
 
 }
-
+.fig #weather-icon{
+    text-transform: capitalize;
+    color: #3a5250;
+    margin: .3rem 0;
+}
 
 /* #openButton { background-color: aqua;}
 #openButton2 { background-color: lawngreen;}
