@@ -24,6 +24,52 @@ footer {
     color: var(--accent2-color);
 }
 
+
+
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 840px;
+    border-radius: 0.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav li {
+    flex: 1 1 auto;
+}
+
+
+header nav a:hover {
+    color: greenyellow;
+    text-decoration:#055a05
+}
+
+
+header nav a {
+    display: block;
+    text-decoration: none;
+    color: navy;
+    font-size: 1.2;
+    border: 1px solid rgb(0 0 0 /0.2);
+    background-color: #aaa;
+    border-radius: 0.5rem;
+    padding: 0.5em;
+    margin: 0.2rem;
+    align-items: center;
+
+}
+
+
+
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
