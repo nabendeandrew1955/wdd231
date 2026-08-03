@@ -37,14 +37,13 @@ header {
     border-radius: 0.5rem;
 }
 
+
+
 header nav ul {
-    display: flex;
     list-style: none;
 }
 
-header nav li {
-    flex: 1 1 auto;
-}
+
 
 
 header nav a:hover {
@@ -57,7 +56,8 @@ header nav a {
     display: block;
     text-decoration: none;
     color: navy;
-    font-size: 1.2;
+    font-size: 1.3rem;
+    font-weight: 700;
     border: 1px solid rgb(0 0 0 /0.2);
     background-color: #aaa;
     border-radius: 0.5rem;
@@ -65,6 +65,10 @@ header nav a {
     margin: 0.2rem;
     align-items: center;
 
+}
+
+.active{
+    color: red;
 }
 
 
@@ -87,6 +91,68 @@ h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+/************************************************/
+
+/* h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: rgb(70 83 107 / 50%);
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    text-align: center;
+    font-family: Acme, sans-serif;
+}
 
 
 
+   
+
+   
+   
+
+p {
+    margin: 1rem auto;
+    width: fit-content;
+    font-family: Acme, sans-serif;
+} */
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+
+        li {
+            flex: 1 1 100%;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: larger;
+    }
+}
+
+/****************HAMBURGER NAVIGATION*****************/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: purple;
+    cursor: pointer;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+
+
+}
