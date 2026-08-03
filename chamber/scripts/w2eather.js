@@ -1,4 +1,5 @@
-// select HTML elements in the document
+
+
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
@@ -14,8 +15,8 @@ const mylat = "1.512485"
 const mylog = "32.395955"
 const mycnt = 3
 
- const myurl = `//api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylog}&"units=imperial"&appid=${mykey}&units=imperial`;
-// const myurl = `//api.openweathermap.org/data/2.5/forecast/daily?lat=${mylat}&lon=${mylog}&cnt=${mycnt}&appid=${mykey}&units=imperial`;
+  const myurl = `//api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylog}&"units=imperial"&appid=${mykey}&units=imperial`;
+//  const myurl = `//api.openweathermap.org/data/2.5/forecast?lat=${mylat}&lon=${mylog}&appid=${mykey}$units=imperial`;
 
 async function apiFetch() {
     try {
@@ -49,26 +50,6 @@ apiFetch();
 
 /********************join.html*************************/
 
-// const getstring = window.location.search;
-// console.log(getstring);
-
-const myinfo = new URLSearchParams(window.location.search);
-
-// console.log(myinfo);
-
-// console.log(myinfo.get('fname'));
-// console.log(myinfo.get('lname'));
-// console.log(myinfo.get('ordinance'));
-// console.log(myinfo.get('applicationdate'));
-// console.log(myinfo.get('Membership'));
-// console.log(myinfo.get('phone'));
-// console.log(myinfo.get('email'));
-
-document.querySelector('#results').innerHTML = `
-<p>Appointment for ${myinfo.get('first')} ${myinfo.get('last')}</p>
-<p>Proxy ${myinfo.get('ordinance')} on ${myinfo.get('date')} in the ${myinfo.get('location')}</p>
-<p>Your phone: ${myinfo.get('phone')}</p>
-<p>Your email is ${myinfo.get('email')}</p>`
 
 /****************************dialog*************************************/
 
