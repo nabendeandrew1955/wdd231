@@ -1,3 +1,4 @@
+export const path = ""
 export const places = [
     {
         "Name": "vibrant-tourism",
