@@ -52,7 +52,7 @@ function displayItems(data) {
         portrait.setAttribute('height', '200');
 
         // Append the section(card) with the created elements
-        
+    
         cards.appendChild(Name);
         cards.appendChild(portrait);//fill in the blank
         cards.appendChild(Address);

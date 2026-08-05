@@ -490,6 +490,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 #weather-table {
     border: 1px solid #5d6f67;
     background-color: #f6f0da;
@@ -509,7 +510,7 @@ img {
 #weather img {
     max-width: 50px;
     height: auto;
-    
+
 }
 
 .hero {
@@ -528,10 +529,10 @@ img {
     color: white;
     margin: 10px auto;
     border-radius: 1rem;
-    position:absolute;
+    position: absolute;
     top: 20rem;
     left: 20rem;
-    
+
 }
 
 #weather {
@@ -543,7 +544,7 @@ img {
     margin: 10px auto;
     color: green;
     border-radius: 1rem;
-    position:absolute;
+    position: absolute;
     bottom: 2rem;
     right: 43rem;
 
@@ -900,7 +901,8 @@ h2 {
 
 
 }
-.fig #weather-icon{
+
+.fig #weather-icon {
     text-transform: capitalize;
     color: #3a5250;
     margin: .3rem 0;
@@ -911,3 +913,39 @@ h2 {
 #openButton3 {background-color: indigo;}
 #openButton4 {background-color: violet;}
   */
+
+/******Discoverhtml***************/
+
+div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    width: 100%;
+
+}
+
+div h2 {
+    margin: 1rem 10px;
+}
+
+div img {
+    width: 300px;
+    height: 200px;
+    
+
+}
+
+div p {
+    margin: 1rem 10px;
+}
+
+div address {
+    margin: 1rem 10px
+}
