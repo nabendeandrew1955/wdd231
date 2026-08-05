@@ -30,18 +30,18 @@ const cards = document.querySelector('#cards');
 // }
 
 
-function displayItems(data) {
-    console.log(data)
-    data.forEach((place) => {
+function displayItems(places) {
+    console.log(places)
+    places.forEach((place) => {
         // Create elements to add to the div.cards element
-        let card = document.createElement('section');
+        let card = document.createElement('div');
         let Name = document.createElement('h2'); // fill in the blank
         let portrait = document.createElement('img');
         let Address = document.createElement("p");
         let Description = document.createElement("p");
 
         // Build the h2 content out to show the prophet's full name
-        Name.textContent = `${place.Name}`; // fill in the blank
+        Name.textContent = `Name: ${place.Name}`; // fill in the blank
         Address.innerHTML = `Address: ${place.Address}`;
         Description.innerHTML = `Description: ${place.Description}`;
         // Build the image portrait by setting all the relevant attributes
@@ -52,14 +52,79 @@ function displayItems(data) {
         portrait.setAttribute('height', '200');
 
         // Append the section(card) with the created elements
-    
+
         cards.appendChild(Name);
         cards.appendChild(portrait);//fill in the blank
         cards.appendChild(Address);
         cards.appendChild(Description)
-        
+
 
         cards.appendChild(card);
     }); // end of arrow function and forEach loop
 }
-displayItems(places);
+  displayItems(places);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function displayItems(data) {
+//     console.log(data)
+//     data.forEach((place) => {
+//         // Create elements to add to the div.cards element
+//         let card = document.createElement('section');
+//         let Name = document.createElement('h2'); // fill in the blank
+//         let portrait = document.createElement('img');
+//         let Address = document.createElement("p");
+//         let Description = document.createElement("p");
+
+//         // Build the h2 content out to show the prophet's full name
+//         Name.textContent = `Name: ${place.Name}`; // fill in the blank
+//         Address.innerHTML = `Address: ${place.Address}`;
+//         Description.innerHTML = `Description: ${place.Description}`;
+//         // Build the image portrait by setting all the relevant attributes
+//         portrait.setAttribute('src', place.path);
+//         portrait.setAttribute('alt', `Portrait of ${place.Name}`); // fill in the blank
+//         portrait.setAttribute('loading', 'lazy');
+//         portrait.setAttribute('width', '30');
+//         portrait.setAttribute('height', '200');
+
+//         // Append the section(card) with the created elements
+    
+//         cards.appendChild(Name);
+//         cards.appendChild(portrait);//fill in the blank
+//         cards.appendChild(Address);
+//         cards.appendChild(Description)
+        
+
+//         cards.appendChild(card);
+//     }); // end of arrow function and forEach loop
+// }
+// displayItems(places);

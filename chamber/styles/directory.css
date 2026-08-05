@@ -916,20 +916,20 @@ h2 {
 
 /******Discoverhtml***************/
 
-div {
-    margin: 1rem 8px;
-    border: 1px solid #999;
-    background-color: #eee;
-    border-radius: 8px;
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.2s ease;
-    width: 100%;
+#cards  {
+    background-color: var(--primary);
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.2s ease;
+         width: 100%; */
+    }
 
-}
+ 
 
 div h2 {
     margin: 1rem 10px;
