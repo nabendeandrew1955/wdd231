@@ -10,43 +10,43 @@ export const places = [
         "Name": "Murchison Falls National Park",
         "Address": "Masindi & Nwoya Districts, Northwestern Uganda",
         "Description": "Uganda's largest national park featuring dramatic waterfalls, game drives, boat cruises, and abundant wildlife including elephants, giraffes, lions, and hippos.",
-        "path": ""
+        "path": "images\murchison-falls-national-park.webp"
     },
     {
         "Name": "Source of the Nile",
         "Address": "Source of the Nile Gardens, Jinja, Uganda",
         "Description": "The historic source of the world's longest river, offering boat rides, kayaking, rafting, and scenic river views.",
-        "path": "images/renewable-energy-solutions.webp"
+        "path": "images\source-of-the-nile.webp"
     },
     {
         "Name": "Queen Elizabeth National Park",
         "Address": "Kasese, Rubirizi, Rukungiri & Kamwenge Districts, Western Uganda",
         "Description": "One of Uganda's most visited parks, known for tree-climbing lions, boat safaris on the Kazinga Channel, and diverse wildlife",
-        "path": "images/agricultural-research.webp"
+        "path": "images\queen-elizabeth-park.webp"
     },
     {
         "Name": "Kibale National Park",
         "Address": "Fort Portal, Kabarole District, Western Uganda",
         "Description": "A tropical rainforest famous for chimpanzee trekking and home to over 13 species of primates.",
-        "path": "images/maize-garden.webp"
+        "path": "images\kibale-park.webp"
     },
     {
         "Name": "Lake Bunyonyi",
         "Address": "Kabale District, Southwestern Uganda",
         "Description": "A beautiful freshwater lake with 29 islands, ideal for canoeing, birdwatching, swimming, and relaxation.",
-        "path": "images/agriculture-land-in-uganda.webp"
+        "path": "images\lake-bunyonyi.webp"
     },
     {
         "Name": "Rwenzori Mountains National Park",
         "Address": "Kasese District, Western Uganda",
         "Description": "A UNESCO World Heritage Site offering spectacular hiking through glaciers, alpine vegetation, and Africa's third-highest mountain range.",
-        "path": "images/more-productive-farming.webp"
+        "path": "images\rwenzori-national-park.webp"
     },
     {
         "Name": "Kasubi Tombs",
         "Address": "Kasubi Hill, Kampala, Uganda",
         "Description": "The royal burial grounds of the Buganda Kings and an important UNESCO World Heritage cultural site.",
-        "path": "images/cultivating-equity.webp"
+        "path": "images\kasubi-tombs.webp"
     }
 
 
