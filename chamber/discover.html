@@ -10,14 +10,14 @@
     <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-larger.css">
-    <!-- <script src="scripts/directory.js" defer></script> -->
+     <script src="scripts/discovers.js" type="module"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <meta property="og:description"
-         content="Nabzo is an organization that is meant to deal in electrical and electronic appliances as well as service them..">
+        content="Nabzo is an organization that is meant to deal in electrical and electronic appliances as well as service them..">
     <meta property="og:url" content="https://www.facebook.com/electrical.nabzo">
     <meta property="og:title" content="https://www.facebook.com/electrical.nabzo">
     <meta property="og:image" content="https://www.facebook.com/electrical.nabzo">
@@ -39,9 +39,24 @@
         </ul>
         <button id="ham-btn" class="hamburger"></button>
     </nav>
+
     <main>
-    <h1>Fun Places</h1>
-        <div id="cards"></div>
+        <h1>Fun Places</h1>
+        <!-- <div class="course-grid"> -->
+            <div id="visit-message" class="visit-banner"></div>
+            <section class="discover-card" id="places-container"></section>
+            
+            <!-- <div class="course-card" id="showHere"></div> -->
+        </div>
+        <!-- <dialog id="mydialog">
+            <div>
+            <h2></h2>
+            <button>X</button>
+            </div>
+            <p></p>
+            <p></p>
+            <p></p>
+        </dialog> -->
     </main>
     <footer>
         <div class="social">
@@ -58,7 +73,7 @@
         </p>
         <p><span id="lastmodified"></span> </p>
     </footer>
-<script src="scripts/discovers.js" type="module"></script>
+    <script src="scripts/discovers.js" type="module"></script>
 </body>
 
 </html>
