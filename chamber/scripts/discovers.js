@@ -3,6 +3,14 @@ import {places} from "../data/discover.mjs";
 
 
 
+const mydialog = document.querySelector('#mydialog');
+const mytitle = document.querySelector('#mydialog h2');
+const myinfo = document.querySelector('#mydialog p');
+const openButton = document.querySelector("#openButton");
+const myclose = document.querySelector('#mydialog button');
+myclose.addEventListener("click", () => mydialog.close());
+
+
 
  document.addEventListener("DOMContentLoaded", () => {
      renderPlaces();
@@ -20,22 +28,33 @@ import {places} from "../data/discover.mjs";
          const card = document.createElement("article");
          card.classList.add("discover-card");
 
-        
+         
          card.style.gridArea = `area${index + 1}`;
 
          card.innerHTML = `
              <h2>${place.Name}</h2>
              <figure>
-                 <img src="${place.path}" alt="${place.Name}" width="300" height="200" loading="lazy">
+                 <img src= "${place.path}" alt="${place.Name}" width="300" height="200" loading="lazy">
              </figure>
              <address>${place.Address}</address>
              <p>${place.Description}</p>
-             <button class="card-btn">More information</button>
+             <button id="openButton">More Information</button> 
          `;
+          
 
          container.appendChild(card);
      });
- }
+}
+openButton.addEventListener('click', () => showStuff(x))
+
+function showStuff(x) {
+    
+          mytitle.innerHTML = x.Name;
+          mydialog.showModal();
+          myinfo.innerHTML = `<p>Address:- ${x.Address}</p>
+           <p>Description:- ${x.Description}</p>`
+      }
+
 
  // local storage
  function handleVisitMessage() {
@@ -87,11 +106,11 @@ import {places} from "../data/discover.mjs";
 // 
 // const showHere = document.querySelector("#showHere");
 // // // GET A REFERENCE TO THE HTML DIALOG ELEMENT
-//  const mydialog = document.querySelector('#mydialog');
-//  const mytitle = document.querySelector('#mydialog h2');
-//  const myinfo = document.querySelector('#mydialog p');
-//  const myclose = document.querySelector('#mydialog button');
-//  myclose.addEventListener("click", () => mydialog.close());
+//   const mydialog = document.querySelector('#mydialog');
+//   const mytitle = document.querySelector('#mydialog h2');
+//   const myinfo = document.querySelector('#mydialog p');
+//   const myclose = document.querySelector('#mydialog button');
+//   myclose.addEventListener("click", () => mydialog.close());
 
 // // //------ loop through the array of json items.
 //  function displayItems(places) {
