@@ -2,7 +2,7 @@ import {places} from "../data/discover.mjs";
 //   console.log(places)
 
 
-const showHere = document.querySelector('#cards')
+const showHere = document.querySelector('#jorris')
 const mydialog = document.querySelector('#mydialog');
 const mytitle = document.querySelector('#mydialog h2');
 const myinfo = document.querySelector('#mydialog p');
@@ -13,48 +13,48 @@ myclose.addEventListener("click", () => mydialog.close());
 
 
 
- function displayItems(places) {
-     console.log(places)
-     places.forEach((place) => {
-         // Create elements to add to the div.cards element
-         let card = document.createElement('div');
-         let Name = document.createElement('h2'); // fill in the blank
-         let portrait = document.createElement('img');
-         let Address = document.createElement("p");
-         let Description = document.createElement("p");
+//  function displayItems(places) {
+//      console.log(places)
+//      places.forEach((place) => {
+//          // Create elements to add to the div.cards element
+//          let card = document.createElement('div');
+//          let Name = document.createElement('h2'); // fill in the blank
+//          let portrait = document.createElement('img');
+//          let Address = document.createElement("p");
+//          let Description = document.createElement("p");
 
-         // Build the h2 content out to show the prophet's full name
-         Name.textContent = `Name: ${place.Name}`; // fill in the blank
-         Address.innerHTML = `Address: ${place.Address}`;
-         Description.innerHTML = `Description: ${place.Description}`;
-         // Build the image portrait by setting all the relevant attributes
-         portrait.setAttribute('src', place.path);
-         portrait.setAttribute('alt', `Portrait of ${place.Name}`); // fill in the blank
-         portrait.setAttribute('loading', 'lazy');
-         portrait.setAttribute('width', '300');
-         portrait.setAttribute('height', '200');
-         portrait.addEventListener('click', () => showStuff(place));
+//          // Build the h2 content out to show the prophet's full name
+//          Name.textContent = `Name: ${place.Name}`; // fill in the blank
+//          Address.innerHTML = `Address: ${place.Address}`;
+//          Description.innerHTML = `Description: ${place.Description}`;
+//          // Build the image portrait by setting all the relevant attributes
+//          portrait.setAttribute('src', place.path);
+//          portrait.setAttribute('alt', `Portrait of ${place.Name}`); // fill in the blank
+//          portrait.setAttribute('loading', 'lazy');
+//          portrait.setAttribute('width', '300');
+//          portrait.setAttribute('height', '200');
+//          portrait.addEventListener('click', () => showStuff(place));
 
-         // Append the section(card) with the created elements
+//          // Append the section(card) with the created elements
 
-         card.appendChild(Name);
-         card.appendChild(portrait);//fill in the blank
-         card.appendChild(Address);
-         card.appendChild(Description)
+//          card.appendChild(Name);
+//          card.appendChild(portrait);//fill in the blank
+//          card.appendChild(Address);
+//          card.appendChild(Description)
 
 
-         showHere.appendChild(card);
-     }); // end of arrow function and forEach loop
-}
+//          showHere.appendChild(card);
+//      }); // end of arrow function and forEach loop
+// }
  
-function showStuff(place) {
-    mytitle.innerHTML = place.Name;
-    mydialog.showModal();
-    myinfo.innerHTML = `
-    <p>Address: ${place.Address}</p>
-    <p>Description: ${place.Description}`
-}
-  displayItems(places);
+// function showStuff(place) {
+//     mytitle.innerHTML = place.Name;
+//     mydialog.showModal();
+//     myinfo.innerHTML = `
+//     <p>Address: ${place.Address}</p>
+//     <p>Description: ${place.Description}`
+// }
+//   displayItems(places);
 
 
 
@@ -166,18 +166,43 @@ function showStuff(place) {
 //   myclose.addEventListener("click", () => mydialog.close());
 
 // // //------ loop through the array of json items.
-//  function displayItems(places) {
-// //     // console.log(data)
-//      places.forEach(x => {
-//          console.log(x)
-//          const card = document.createElement('div');
-//          const Name = document.createElement('h2');
-//          const Address = document.createElement('p');
+function displayItems(places) {
+    // console.log(data)
+    places.forEach(x => {
+        //          console.log(x)
+        const card = document.createElement('div');
+        //          const Name = document.createElement('h2');
+        //          const Address = document.createElement('p');
 
-// //         //adding futres below console
-//          const photo = document.createElement('img');
-//         photo.src = `${x.path}`
-//          photo.alt = x.Name;
+        // //         //adding futres below console
+        const photo = document.createElement('img');
+        photo.src = `${x.path}`;
+        photo.alt = x.Name;
+        photo.addEventListener('click', () => showStuff(x));
+        const theTitle = document.createElement('h2');
+        theTitle.innerText = x.Name;
+        //build the address
+        const theaddress = document.createElement('address');
+        theaddress.innerText = x.Address;
+        //Build the description element.
+        const thedesc = document.createElement('p');
+        thedesc.innerHTML = x.Description;
+        card.appendChild(theTitle);
+        card.appendChild(photo);
+        card.appendChild(theaddress);
+        card.appendChild(thedesc)
+        showHere.appendChild(card);
+    });
+}
+
+function showStuff(place) {
+         mytitle.innerHTML = place.Name;
+         mydialog.showModal();
+         myinfo.innerHTML = `
+         <p>Address: ${place.Address}</p>
+         <p>Description: ${place.Description}`
+     }
+displayItems(places)
 //          Name.textContent = `Name: ${place.Name}`; // fill in the blank
 //          Address.innerHTML = `Address: ${place.Address}`;
 //          Description.innerHTML = `Description: ${place.Description}`;
