@@ -1,0 +1,11 @@
+@media screen and (min-width:38rem) {
+    #jorris div {
+            grid-template-areas:
+                "portrait Name"
+                "portrait Description"
+                "portrait Address";
+        }
+        div img {
+            width: 300px;
+        }
+}
