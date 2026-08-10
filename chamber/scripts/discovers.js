@@ -109,32 +109,32 @@ myclose.addEventListener("click", () => mydialog.close());
 //       }
 
 
-//  // local storage
-//  function handleVisitMessage() {
-//      const banner = document.getElementById("visit-message");
-//      if (!banner) return;
+  // local storage
+  function handleVisitMessage() {
+      const banner = document.getElementById("visit-message");
+      if (!banner) return;
 
-//      const msInDay = 86400000; // 1000ms * 60s * 60m * 24h
-//      const lastVisit = localStorage.getItem("lastVisitDate");
-//      const now = Date.now();
+      const msInDay = 86400000; // 1000ms * 60s * 60m * 24h
+      const lastVisit = localStorage.getItem("lastVisitDate");
+      const now = Date.now();
 
-//      if (!lastVisit) {
-//          banner.textContent = "You are Welcome.";
-//      } else {
-//          const timeDiff = now - parseInt(lastVisit, 10);
-//          const daysDiff = Math.floor(timeDiff / msInDay);
+      if (!lastVisit) {
+          banner.textContent = "You are Welcome.";
+      } else {
+          const timeDiff = now - parseInt(lastVisit, 10);
+          const daysDiff = Math.floor(timeDiff / msInDay);
 
-//          if (daysDiff < 1) {
-//              banner.textContent = "You are Welcome to UG!";
-//          } else {
-//              const dayWord = daysDiff === 1 ? "dia" : "dias";
-//              banner.textContent = `Last visit was ${daysDiff} ${dayWord}.`;
-//          }
-//      }
+          if (daysDiff < 1) {
+              banner.textContent = "You are Welcome to UG!";
+          } else {
+              const dayWord = daysDiff === 1 ? "dia" : "dias";
+              banner.textContent = `Last visit was ${daysDiff} ${dayWord}.`;
+          }
+      }
 
 
-//      localStorage.setItem("lastVisitDate", now.toString());
-//  }
+      localStorage.setItem("lastVisitDate", now.toString());
+  }
 
 
 
