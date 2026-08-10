@@ -1,0 +1,223 @@
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-dark: #1e1e24;
+    --text-main: #333333;
+    --border-color: #e5e7eb;
+}
+
+#jorris div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 8px;
+}
+
+#jorris div h2 {
+    margin: 1rem 10px;
+
+}
+
+#jorris div img {
+    width: 300px;
+    height: 200px;
+}
+
+#jorris div p {
+    margin: 1rem 10px;
+}
+
+#jorris div address {
+    margin: 1rem 10px;
+}
+
+
+
+div h2 {
+    margin: 1rem 10px;
+}
+
+div img {
+    min-width: none;
+    width: 300px;
+    height: 200px;
+
+
+}
+
+div p {
+    margin: 1rem 10px;
+}
+
+div address {
+    margin: 1rem 10px
+}
+
+
+/********** cardstyling**********/
+
+/* Grid Display Styling */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Course Item Cards */
+.course-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: green;
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.course-tag {
+    align-self: flex-start;
+    background-color: #eef2ff;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.course-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+.course-desc {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.action-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.action-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+/************************SITE WIDE**********************/
+
+/* Grid com Nomes de Áreas em Coluna Única no Mobile */
+.discover-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "area5"
+        "area6"
+        "area7"
+        "area8";
+}
+
+.discover-card {
+    background-color: var(--primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 800px;
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.discover-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.discover-card address {
+    font-style: italic;
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+/* .discover-card .card-btn {
+      margin-top: auto;
+      padding: 0.5rem;
+      background-color: var(--primary-color);
+      color: var(--white);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+  } */
+
+/* .modal-content {
+    padding: 1.5rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content h3 {
+    margin-bottom: 1rem;
+}
+
+.modal-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+}
+
+.modal-content li {
+    margin-bottom: 0.5rem;
+}
+
+.close-modal {
+    background-color: #b71c1c;
+    color: var(--white);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.close-modal:hover {
+    background-color: #8c1111;
+} */

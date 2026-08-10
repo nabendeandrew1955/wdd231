@@ -199,8 +199,8 @@ function showStuff(place) {
          mytitle.innerHTML = place.Name;
          mydialog.showModal();
          myinfo.innerHTML = `
-         <p>Address: ${place.Address}</p>
-         <p>Description: ${place.Description}`
+         <p><strong>Address:</strong> ${place.Address}</p>
+         <p><strong>Description:</strong> ${place.Description}`
      }
 displayItems(places)
 //          Name.textContent = `Name: ${place.Name}`; // fill in the blank
