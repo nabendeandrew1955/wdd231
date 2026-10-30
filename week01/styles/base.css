@@ -100,25 +100,34 @@ footer {
     display: flex;
     justify-content: center;
     column-gap: 8px;
-    width: 44px;
-    height: 44px;
-    
-}
 
-.social img {
-    width:22px;
-    height:22px;
+
 }
 
 .social a {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    width: 44px;
+    height: 44px;
     border: #ccc solid 1px;
-    border-radius: 22px;
+    border-radius: 33px;
+
+}
+
+.social img {
+    width: 44px;
+    height: 44px;
 }
 
 .social a:hover {
     background-color: #ddd;
+
+
 }
+
+
+
+
+
 
