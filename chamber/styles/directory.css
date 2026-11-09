@@ -1,0 +1,162 @@
+/* -----------------COLOR SCHEME------------------
+terra cotta #E07A5F
+deep slate blue #3D405B
+
+*/
+/******************************PERSONAL*************************************/
+
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-dark: #1e1e24;
+    --text-main: #333333;
+    --border-color: #e5e7eb;
+}
+
+
+/************************SITE WIDE**********************/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/*********************HEADER******************************/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: #eee;
+    font-weight: 700;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: purple;
+}
+
+/****************HAMBURGER NAVIGATION*****************/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: purple;
+    cursor: pointer;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+
+
+}
+
+/*****************************NAVIGATION**************************/
+ .navigation {
+    display: none;
+    background-color: #154260;
+    align-items: center;
+} 
+
+.navigation.show {
+    display: block
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: orange;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+.navigation li.current {
+    background-color: black;
+}
+
+.navigation a:hover {
+    background-color: palegreen;
+}
+
+/* h1 {
+    padding-left: 10px;
+}
+ */
+
+/**********************FOOTER***************************/
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+
+
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 33px;
+
+}
+
+.social img {
+    width: 33px;
+    height: 33px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+
+
+}
+
+/***************************todays*******************
+
+/*********************more*******************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

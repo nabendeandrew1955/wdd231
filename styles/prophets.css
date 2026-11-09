@@ -95,3 +95,41 @@ li > img {
 .un {
 	list-style: none;
 }
+
+footer {
+	background-color: #eee;
+	padding: 1rem 10px;
+	text-align: center;
+}
+
+
+.social {
+	display: flex;
+	justify-content: center;
+	column-gap: 8px;
+
+
+}
+
+.social a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 8px;
+	width: 44px;
+	height: 44px;
+	border: #ccc solid 1px;
+	border-radius: 33px;
+
+}
+
+.social img {
+	width: 33px;
+	height: 33px;
+}
+
+.social a:hover {
+	background-color: #ddd;
+
+
+}

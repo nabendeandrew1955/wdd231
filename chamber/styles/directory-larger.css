@@ -1,0 +1,57 @@
+@media only screen and (min-width:38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+
+
+    }
+
+    .navigation ul {
+        display: flex;
+
+
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+
+    h2 {
+        text-align: center;
+        background-color: green;
+        color: #ffffff;
+        padding: 0.5rem;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+
+
+    h1 {
+        font-size: 3rem;
+        margin: 1rem;
+        color: white;
+        background-color: green;
+
+    }
+
+
+
+}
