@@ -34,5 +34,4 @@ const byuiCourse = {
     },
 };
 
-
 export default byuiCourse;
