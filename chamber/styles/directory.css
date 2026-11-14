@@ -423,3 +423,103 @@ img {
     width: auto;
     height: 75px;
 }
+
+/****************14-11-2026***************/
+.action {
+    display: flex;
+    background-color: green;
+    max-width: 840px;
+    margin: 10px auto;
+    border-radius: .5rem;
+    border: 1px solid rgb(0 0 0 /0.2);
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.action form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 /0.2);
+    border-radius: 0.5rem;
+    background-color: red;
+    color: #eee;
+
+}
+
+.action fieldset {
+    display: grid;
+    gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 /0.2);
+    padding: 1rem;
+}
+
+.action-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+ #weather-table {
+    border: 1px solid #5d6f67;
+    background-color: #f6f0da;
+    border-radius: 10px;
+    text-align: center;
+
+} 
+
+ .col2-data {
+    font-size: 2rem;
+    color: black;
+    margin: .3rem 0;
+
+
+}  
+
+#weather img {
+    max-width: 50px;
+    height: auto;
+
+}
+
+#data-table {
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+    border: 1px solid rgb(0 0 0 / .2);
+    padding: 1rem;
+    color: white;
+    margin: 10px auto;
+    border-radius: 1rem;
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+    border: 1px solid rgb(0 0 0 / .2);
+    padding: 1rem;
+    margin: 10px auto;
+    color: green;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 34rem;
+
+}

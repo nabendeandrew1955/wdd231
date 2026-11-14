@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wdd-231 Nabende Andrew Mafabi Chamber of commerce landing page.">
+    <meta name="author" content="Nabende Andrew Mafabi">
+    <title>Directory of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-larger.css">
+    <script src="scripts/weather.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:description"
+        content="Nabzo is an organization that is meant to deal in electrical and electronic appliances as well as service them..">
+    <meta property="og:url" content="https://www.facebook.com/electrical.nabzo">
+    <meta property="og:title" content="Nabzo">
+    <meta property="og:image" content="https://www.facebook.com/share/v/1HD2Rk5yL7/">
+</head>
+
+<body>
+    <header>
+        <img src="images/uganda-flag-icon.svg" alt="site-logo" width="512" height="512">
+        <span>Uganda's Chamber of Commerce</span>
+
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+        <button id="ham-btn" class="hamburger"></button>
+    </nav>
+    <main>
+        <h1>Uganda Chamber of Commerce</h1>
+        <div class="hero">
+            <picture>
+                <source media="(min-width:1000px)" srcset="images/uganda-big.webp">
+                <source media="(min-width:600px)" srcset="images/uganda-medium.webp">
+                <img src="images/uganda-small.webp" alt="Lake Victoria view" width="500" height="250">
+            </picture>
+            <section id="data-table">
+                <h2 id="town"></h2>
+                <div class="datatable">
+                    <div class="row">
+                        <div class="col-label">Area:</div>
+                        <div class="col-data">241,553 sq Km</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Population:</div>
+                        <div class="col-data">44,387,526 million</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Capital:</div>
+                        <div class="col-data">Kampala</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Languages:</div>
+                        <div class="col-data">English</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Currency:</div>
+                        <div class="col-data">Ugandan Shilling</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Time Zone:</div>
+                        <div class="col-data">G.M.T +3</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Calling Code:</div>
+                        <div class="col-data">+256</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">Internet TLD:</div>
+                        <div class="col-data">.MG</div>
+                    </div>
+                </div>
+            </section>
+            <div class="action">
+                <form>
+                    <fieldset>
+                        <div>
+                            <p><b>Subscribe to our News letter delivered to your in box monthly</b>
+                            </p>
+                        </div>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <button type="submit"><b>Subscribe Now!!!</b></button>
+                    </fieldset>
+                </form>
+                <section>
+                    <form action="join.html">
+                        <h4>Join the Uganda chamber of commerce for unity, increased benefits in economies of scale and
+                            reduced
+                            costs of production?</h4>
+                        <button type="submit"><b>JOIN NOW!!!</b></button>
+                    </form>
+                </section>
+            </div>
+            <section id="weather">
+                <div id="weather-table">
+                    <h2>Weather</h2>
+                    <figure class="fig">
+                        <img id="weather-icon" src="" alt="" width="100" height="100">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div class="datatable">
+                    <div class="row">
+                        <div class="col-label">Temperature</div>
+                        <div class="col2-data" id="current-temp">:&deg;C</div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="www.facebook.com/nabende.andrew" target="_blank"><img src="images/facebook.svg" alt="facebook"
+                    width="16" height="16"></a>
+            <a href="www.instagram.com/andrewnabende" target="_blank"><img src="images/instagram.svg" alt="instagram"
+                    width="16" height="16"></a>
+            <a href="www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedIn" width="16"
+                    height="16"></a>
+            <a href="www.tiktok.com/@nabendeandrew2" target="_blank"><img src="images/github.svg" alt="tiktok"
+                    width="16" height="16"></a>
+        </div>
+        <p><span id="year"></span>🌴- Nabende Andrew Mafabi 🌴 Kampala, Uganda.</p>
+        <p><span id="lastmodified"></span></p>
+    </footer>
+
+
+
+</body>
+
+</html>
