@@ -4,6 +4,12 @@ deep slate blue #3D405B
 
 */
 /******************************PERSONAL*************************************/
+* {
+    font-family: sans-serif, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 :root {
     --primary: #4f46e5;
@@ -16,11 +22,12 @@ deep slate blue #3D405B
 
 /************************SITE WIDE**********************/
 
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
+body {
+    font-family: system-ui, -apple-system, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 40px 20px;
+    background-color: #f9fafb;
+    color: var(--text-main);
 }
 
 
@@ -35,6 +42,7 @@ header {
     column-gap: 8px;
     background-color: #eee;
     font-weight: 700;
+    align-items: end;
 }
 
 header img {
@@ -46,7 +54,48 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: purple;
+    color: #3D405B;
+}
+main {
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid rgb(0 0 0 / .2);
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #154260;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+h4 {
+    text-align: center;
+    background-color: #154260;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.photo.history {
+
+    margin: 0 auto;
+    border: 1px solid rgb(0 0 0 / .2);
+    background-color: red;
+    border-radius: 1px;
+}
+
+h1 {
+    background-color: #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    /* border: 1px solid rgb(0 0 0 / .2); */
+    text-align: left;
 }
 
 /****************HAMBURGER NAVIGATION*****************/
@@ -54,23 +103,19 @@ header span {
 .hamburger {
     background: none;
     border: none;
-    color: purple;
+    color: #3D405B;
     cursor: pointer;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hamburger::before {
     content: "\2630";
     font-size: 2rem;
-
 }
 
 .hamburger.show::before {
     content: "\00D7";
-
-
 }
-
 /*****************************NAVIGATION**************************/
 .navigation {
     display: none;
@@ -79,34 +124,35 @@ header span {
 }
 
 .navigation.show {
-    display: block
+    display: block;
 }
 
 .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
 }
 
 .navigation a {
     display: block;
-    padding: .8rem 10px;
     color: orange;
+    text-align: center;
+    padding: 0.8rem 10px;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
     font-weight: 700;
-    text-align: center;
 }
 
-
-
 .navigation li.current {
-    background-color: black;
+    background-color: red;
 }
 
 .navigation a:hover {
     background-color: palegreen;
+}
+
+h1 {
+    margin-left: 10px;
 }
 
 /**********************FOOTER***************************/
@@ -398,7 +444,7 @@ button {
 h3 {
     font-size: 1.5rem;
     background-color: gold;
-} 
+}
 
 
 .grid {
@@ -472,21 +518,21 @@ img {
     height: auto;
 }
 
- #weather-table {
+#weather-table {
     border: 1px solid #5d6f67;
     background-color: #f6f0da;
     border-radius: 10px;
     text-align: center;
 
-} 
+}
 
- .col2-data {
+.col2-data {
     font-size: 2rem;
     color: black;
     margin: .3rem 0;
 
 
-}  
+}
 
 #weather img {
     max-width: 50px;

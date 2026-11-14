@@ -1,10 +1,29 @@
+let d = new Date();
+document.getElementById("year").innerHTML = `&copy; ${d.getFullYear()}`;
+document.querySelector("#lastmodified").textContent = `lastmodification: ${document.lastModified}`;
+
+const navbutton = document.querySelector('#ham-btn');
+const navBar = document.querySelector('#nav-bar')
+
+// Toggle to show class off and on
+
+navbutton.addEventListener('click', () => {
+    const isOpen = navbutton.classList.toggle('show');
+    navbutton.setAttribute('arial-expand', isOpen);
+    navBar.classList.toggle('show');
+
+});
+
+
+
+/******* for weather data */
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const base = document.querySelector('#town');
-let d = new Date();
-document.getElementById("year").innerHTML = `&copy; ${d.getFullYear()}`;
-document.querySelector("#lastmodified").textContent = `lastmodification: ${document.lastModified}`;
+// let d = new Date();
+// document.getElementById("year").innerHTML = `&copy; ${d.getFullYear()}`;
+// document.querySelector("#lastmodified").textContent = `lastmodification: ${document.lastModified}`;
 
 
 
