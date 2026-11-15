@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-larger.css">
-    <script src="scripts/discover.js" defer></script>
+    <script type="module" src="scripts/discover.js" ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -40,11 +40,18 @@
     </nav>
 
             
-        <main id="company-grid" class="directory-grid">
+        <main>
+            <h1>Business Directory</h1>
+            <div class="menu">
+                <button id="grid" class="active">Grid</button>
+                <button id="list" class="active">List</button>
+            </div>
+            <div id="company-grid" class="directory-grid">
             <!-- Company cards will be injected here by JavaScript -->
+             </div>
         </main>
 
-    </main>
+    
 
     <footer>
         <div class="social">

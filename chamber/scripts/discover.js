@@ -1,8 +1,8 @@
 
 import {companies } from "../data/discover.mjs";
-  console.log(places)
+  //console.log(companies)
 
-/*const gridContainer = document.getElementById('company-grid');
+const gridContainer = document.getElementById('company-grid');
 
 // Helper function to map membership numbers to labels and CSS classes
 function getMembershipDetails(level) {
@@ -16,61 +16,62 @@ function getMembershipDetails(level) {
             return { label: 'Member', className: 'badge-member' };
     }
 }
+// for weather
+
 
 // Fetch and display the JSON data
 async function loadCompanies() {
     try {
         const response = await fetch('companies.json');
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
+        if (response.ok) {
+            const companies = await response.json();
+            //console.log(data); // testing only
+            displayResults(companies); // uncomment when ready
+        } else {
+            throw Error(await response.text());
         }
+    } catch (error) {
+        console.log(error);
+    }
 
-        const companies = await response.json();
+    // const companies = await response.json();
 
-        // Limit to 9 companies and generate HTML for each
-        companies.slice(0, 9).forEach(company => {
-            const membership = getMembershipDetails(company.membership);
+    // Limit to 9 companies and generate HTML for each
+    companies.slice(0, 9).forEach(company => {
+        const membership = getMembershipDetails(company.membership);
 
-            const card = document.createElement('article');
-            card.className = 'card';
+        const card = document.createElement('article');
+        card.className = 'card';
 
-            // Note: Assumes images are stored in an 'images/' folder. 
-            // Includes an onerror fallback placeholder if the local image doesn't exist yet.
-            card.innerHTML = `
+        // Note: Assumes images are stored in an 'images/' folder. 
+        // Includes an onerror fallback placeholder if the local image doesn't exist yet.
+        card.innerHTML = `
                         <img 
-                            src="images/${company.image}" 
-                            alt="${company.name} logo"
-                            onerror="this.onerror=null; this.src='https://placehold.co{encodeURIComponent(company.name)}';"
+                   src="${company.path}" 
+                            alt="${company.Name} logo"
+                            onerror="this.onerror=null; this.src='https://placehold.co/400x300?text=${encodeURIComponent(company.Name)}';"
                         >
                         <div class="card-content">
                             <div class="card-header">
-                                <h2>${company.name}</h2>
+                                <h2>${company.Name}</h2>
                                 <span class="badge ${membership.className}">${membership.label}</span>
                             </div>
                             <ul class="info-list">
-                                <li><strong>Address:</strong> ${company.address}</li>
+                                <li><strong>Address:</strong> ${company.Address}</li>
                                 <li><strong>Phone:</strong> ${company.phone}</li>
-                                <li><strong>Image File:</strong> ${company.image}</li>
+                                <li><strong>Image File:</strong> ${company.path}</li>
                             </ul>
-                            <a href="${company.website}" target="_blank" rel="noopener noreferrer" class="btn-website">
+                            <a href="${company.url}" target="_blank" rel="noopener noreferrer" class="btn-website">
                                 Visit Website
                             </a>
                         </div>
                     `;
 
-            gridContainer.appendChild(card);
-        });
-
-    } catch (error) {
-        console.error('Error loading company data:', error);
-        gridContainer.innerHTML = `
-                    <p class="error-msg">
-                        Failed to load companies.json. Make sure you are running this page through a local server (e.g., Live Server).
-                    </p>
-                `;
-    }
+        gridContainer.appendChild(card);
+    });
 }
 
-loadCompanies();*/
-    
+
+loadCompanies();
+             
