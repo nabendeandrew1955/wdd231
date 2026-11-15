@@ -569,3 +569,142 @@ img {
     right: 34rem;
 
 }
+
+/***********************14-11-2026 2directory*********/
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+     background-color: #f4f7f6;
+     color: #333;
+     padding: 2rem;
+ }
+
+ header {
+     text-align: center;
+     margin-bottom: 2.5rem;
+ }
+
+ header h1 {
+     font-size: 2.2rem;
+     color: #1a252f;
+ }
+
+ /* Responsive 3-column grid for 9 items */
+ .directory-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 1.5rem;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .card {
+     background: #ffffff;
+     border-radius: 10px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     transition: transform 0.2s ease;
+ }
+
+ .card:hover {
+     transform: translateY(-5px);
+ }
+
+ .card img {
+     width: 100%;
+     height: 180px;
+     object-fit: cover;
+     background-color: #e2e8f0;
+ }
+
+ .card-content {
+     padding: 1.5rem;
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
+ }
+
+ .card-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     gap: 10px;
+     margin-bottom: 1rem;
+ }
+
+ .card-header h2 {
+     font-size: 1.25rem;
+     color: #1a252f;
+ }
+
+ /* Membership Badges */
+ .badge {
+     padding: 0.25rem 0.65rem;
+     border-radius: 20px;
+     font-size: 0.75rem;
+     font-weight: bold;
+     text-transform: uppercase;
+     white-space: nowrap;
+ }
+
+ .badge-member {
+     background-color: #e2e8f0;
+     color: #475569;
+ }
+
+ .badge-silver {
+     background-color: #f1f5f9;
+     color: #334155;
+     border: 1px solid #94a3b8;
+ }
+
+ .badge-gold {
+     background-color: #fef3c7;
+     color: #b45309;
+     border: 1px solid #f59e0b;
+ }
+
+ .info-list {
+     list-style: none;
+     margin-bottom: 1.5rem;
+     font-size: 0.95rem;
+     color: #555;
+     flex-grow: 1;
+ }
+
+ .info-list li {
+     margin-bottom: 0.5rem;
+     line-height: 1.4;
+ }
+
+ .btn-website {
+     display: inline-block;
+     text-align: center;
+     background-color: #2563eb;
+     color: #ffffff;
+     text-decoration: none;
+     padding: 0.6rem 1rem;
+     border-radius: 6px;
+     font-weight: 600;
+     font-size: 0.9rem;
+     transition: background-color 0.2s;
+ }
+
+ .btn-website:hover {
+     background-color: #1d4ed8;
+ }
+
+ .error-msg {
+     text-align: center;
+     color: #dc2626;
+     font-weight: bold;
+     grid-column: 1 / -1;
+ }
