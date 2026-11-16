@@ -1,6 +1,6 @@
 
-import {companies } from "../data/discover.mjs";
-  //console.log(companies)
+import { companies } from "../data/discover.mjs";
+//console.log(companies)
 
 const gridContainer = document.getElementById('company-grid');
 
@@ -74,4 +74,3 @@ async function loadCompanies() {
 
 
 loadCompanies();
-             
