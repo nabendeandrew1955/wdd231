@@ -37,8 +37,8 @@ async function loadCompanies() {
 
     // const companies = await response.json();
 
-    // Limit to 9 companies and generate HTML for each
-    companies.slice(0, 9).forEach(company => {
+    // Limit to  companies and generate HTML for each
+    companies.slice(0, 7).forEach(company => {
         const membership = getMembershipDetails(company.membership);
 
         const card = document.createElement('article');
