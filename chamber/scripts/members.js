@@ -138,3 +138,41 @@ async function loadCompanies() {
 
 
 loadCompanies();
+
+/* function displayItems(places) {
+    // console.log(data)
+    places.forEach(x => {
+        //          console.log(x)
+        const card = document.createElement('div');
+        //          const Name = document.createElement('h2');
+        //          const Address = document.createElement('p');
+
+        // //         //adding futres below console
+        const photo = document.createElement('img');
+        photo.src = `${x.path}`;
+        photo.alt = x.Name;
+        photo.addEventListener('click', () => showStuff(x));
+        const theTitle = document.createElement('h2');
+        theTitle.innerText = x.Name;
+        //build the address
+        const theaddress = document.createElement('address');
+        theaddress.innerText = x.Address;
+        //Build the description element.
+        const thedesc = document.createElement('p');
+        thedesc.innerHTML = x.Description;
+        card.appendChild(theTitle);
+        card.appendChild(photo);
+        card.appendChild(theaddress);
+        card.appendChild(thedesc)
+        showHere.appendChild(card);
+    });
+}
+
+function showStuff(place) {
+         mytitle.innerHTML = place.Name;
+         mydialog.showModal();
+         myinfo.innerHTML = `
+         <p><strong>Address:</strong> ${place.Address}</p>
+         <p><strong>Description:</strong> ${place.Description}`
+     }
+displayItems(places)                          */
