@@ -110,7 +110,7 @@ async function loadCompanies() {
 
         // Note: Assumes images are stored in an 'images/' folder. 
         // Includes an onerror fallback placeholder if the local image doesn't exist yet.
-        card.innerHTML = `<section>
+        card.innerHTML = ` <article class="grid"><section>
                         <img 
                    src="${company.path}" 
                             alt="${company.Name} logo"
@@ -131,6 +131,7 @@ async function loadCompanies() {
                             </a>
                         </div>
                     </section>
+                    </article>
                     `;
 
         gridContainer.appendChild(card);
