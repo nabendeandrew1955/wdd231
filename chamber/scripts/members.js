@@ -122,9 +122,9 @@ async function loadCompanies() {
                                 <span class="badge ${membership.className}">${membership.label}</span>
                             </div>
                             <ul class="info-list">
+                                <li><strong>Name:</strong> ${company.Name}</li>
                                 <li><strong>Address:</strong> ${company.Address}</li>
-                                <li><strong>Phone:</strong> ${company.phone}</li>
-                                <li><strong>Image File:</strong> ${company.path}</li>
+                                 <li><strong>Phone:</strong> ${company.phone}</li>
                             </ul>
                             <a href="${company.url}" target="_blank" rel="noopener noreferrer" class="btn-website">
                                 Visit Website
