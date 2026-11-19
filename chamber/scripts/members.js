@@ -107,10 +107,12 @@ async function loadCompanies() {
 
         const card = document.createElement('article');
         card.className = 'card';
+        // mine
+        const cardContent = document.createElement('section');
 
         // Note: Assumes images are stored in an 'images/' folder. 
         // Includes an onerror fallback placeholder if the local image doesn't exist yet.
-        card.innerHTML = ` <article class="grid"><section>
+        cardContent.innerHTML = ` 
                         <img 
                    src="${company.path}" 
                             alt="${company.Name} logo"
@@ -130,10 +132,11 @@ async function loadCompanies() {
                                 Visit Website
                             </a>
                         </div>
-                    </section>
-                    </article>
+                    
                     `;
 
+        
+        card.appendChild(cardContent)
         gridContainer.appendChild(card);
     });
 }
