@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/modal.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +44,7 @@
         <h1>Home</h1>
         <section id="about" class="card">
             <h2>About Me</h2>
-        
+
             <section class="inside">
                 <div class="left-inside">
                     <p>My name is Nabende Andrew Mafabi currently pursuing a Bachelors degree in software Engineering
@@ -61,14 +62,14 @@
         </section>
         <section class="container">
             <h2>Web Certificate Courses</h2>
-        
+
             <!-- Filter Controls -->
             <div class="filter-container" id="filter-container">
                 <button class="filter-btn active" data-category="all">All Courses</button>
                 <button class="filter-btn" data-category="Wdd Courses">Wdd Courses</button>
                 <button class="filter-btn" data-category="Cse Courses">Cse Courses</button>
                 <h2 id="total-credits">Total Credits Done:</h2>
-        
+
             </div>
             <!-- Dynamic Output Target -->
             <div class="course-grid" id="course-grid">
@@ -78,7 +79,17 @@
             <div class="course-grid" id="total-credits">
             </div>
         </section>
-        
+        <dialog id="course-details">
+            <div class="course-details-content">
+                <h3 id="course-title"></h3>
+                <p id="course-description"></p>
+                <p><strong>Credits:</strong> <span id="course-credits"></span></p>
+                <button id="close-course-details">Close</button>
+           
+            </dialog>
+            
+    
+
     </main>
     <footer>
         <div class="social">
