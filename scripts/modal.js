@@ -1,4 +1,4 @@
-const courseCard = document.querySelector('#courseCard');
+const courseCard = document.querySelector('#course-grid');
 const courseDetails = document.querySelector('#course-details');
 
 function displayCourseDetails(course) {

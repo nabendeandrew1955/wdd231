@@ -136,14 +136,42 @@ displayCourses(courses);
 
 
 
+/**********************dialogelements(course-details)**********************************************/
 
 
+const course = document.querySelector('#course-grid');
+const courseDetails = document.querySelector('#courseDetails');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+    <button id="closeModal" aria-label="Close">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    courseDetails.querySelector('#closeModal').addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+// Close the modal when the user clicks outside of it (on the backdrop)
+courseDetails.addEventListener('click', (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
 
 
+courseCard.addEventListener('click', () => {
+    displayCourseDetails(course);
+});
 
-
-
-
+/**********************end**************/
 
 // function setActiveButton(selectedButton) {
 //     filterButtons.forEach((button) => {
@@ -169,29 +197,3 @@ displayCourses(courses);
 // });
 
 // displayCourses(courses);
-
-
-/**********************dialogelements(course-details)**********************************************/
-
-const courseDetails = document.querySelector('#course-details');
-function displayCourseDetails(course) {
-    courseDetails.innerHTML = '';
-    courseDetails.innerHTML = `
-    <button id="closeModal">❌</button>
-    <h2>${course.subject} ${course.number}</h2>
-    <h3>${course.title}</h3>
-    <p><strong>Credits</strong>: ${course.credits}</p>
-    <p><strong>Certificate</strong>: ${course.certificate}</p>
-    <p>${course.description}</p>
-    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
-  `;
-    courseDetails.showModal();
-
-    closeModal.addEventListener("click", () => {
-        courseDetails.close();
-    });
-}
-
-courseDiv.addEventListener('click', () => {
-    displayCourseDetails(course);
-});
