@@ -908,6 +908,78 @@ img {
 
  }
 
+ /*********** dialog box***********************/
+
+ #mydialog {
+     border: 1px solid rgb(0 0 0 / 10%);
+     border-radius: .25rem;
+     padding: 1rem;
+     background-color: burlywood;
+     box-shadow: 0 0 3rem #777;
+     align-self: flex-end;
+     width: 90%;
+     max-width: 600px;
+     transition: background-color 0.2s ease;
+ }
+
+
+ #mydialog:hover {
+     background-color: goldenrod;
+ }
+
+ */::backdrop {
+     background-color: rgba(61, 138, 143, 0.758);
+ }
+
+ #mydialog button {
+     position: absolute;
+     top: 3px;
+     right: 1px;
+     padding: .5rem 1rem;
+     border: 1px solid rgb(0 0 0 / 10%);
+ }
+
+ #mydialog dv {
+     display: grid;
+     grid-template-columns: auto 44px;
+     background-color: #4f46e5;
+     padding: 5px;
+     border-bottom: #aaa 1px solid;
+
+ }
+
+
+ #mydialog h2 {
+     margin: 0;
+     color: 275690;
+
+ }
+
+ #mydialog p {
+     padding: 10px;
+     /* color: var(--border-color); */
+     color: red;
+ }
+
+ .Membership {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .gold {
+     display: block;
+     border: 1px solid rgb(0 0 0 /0.2);
+     border-radius: 0.5rem;
+     margin: 10px;
+     /* background-color: var(--accent2-color); */
+     padding: 10px;
+     text-align: center;
+     background-color: #95e916;
+
+
+ }
+
+
  .fig #weather-icon {
      text-transform: capitalize;
      color: #3a5250;
