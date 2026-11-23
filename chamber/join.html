@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Wdd-231 Nabende Andrew Mafabi Chamber of commerce landing page.">
     <meta name="author" content="Nabende Andrew Mafabi">
-    <title>Directory of Commerce</title>
+    <title>Join the Uganda chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-larger.css">
     <script src="scripts/members.js" defer></script>
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/thanks.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
+     <link rel="icon" href="favicon.ico">
     <meta property="og:description"
         content="Nabzo is an organization that is meant to deal in electrical and electronic appliances as well as service them..">
     <meta property="og:url" content="https://www.facebook.com/electrical.nabzo">
-    <meta property="og:title" content="Nabzo">
+    <meta property="og:title" content="Join the uganda chamber of commerce">
     <meta property="og:image" content="https://www.facebook.com/share/v/1HD2Rk5yL7/">
 </head>
 
@@ -42,7 +43,75 @@
 
 
     <main>
-        
+        <h1>Uganda Chamber of Commerce</h1>
+        <div class="form">
+            <h2>Uganda Chamber Of Commerce.</h2>
+            <form method="get" action="thanks.html" class="nabs">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name*<input type="text" name="fname" id="fnmame" autocomplete="given-name" required
+                            title="enter your first name"></label>
+                    <label>Last Name*<input type="text" name="lname" id="lname" autocomplete="family-name" required
+                            title="enter your last name"></label>
+                    <label>Phone<input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="123555123"
+                            title="123555123" required></label>
+                    <label>Email<input type="email" name="email" id="email" autocomplete="email"
+                            placeholder="someone@byupathway.edu" required title="enter a valid email address"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business / Organization<input type="text" name="title" id="title" autocomplete="organization"
+                            required pattern="[A-Za-z\s\-]{7,}"
+                            title="must contain atleast 7 characters(letters, hyphens, spaces only)"></label>
+                    <div>Membership Level</div>
+                    <label><input type="radio" name="Membership" id="1openButton1" value="Np">Np</label>
+                    <label><input type="radio" name="Membership" id="1openButton2" value="gold">Gold</label>
+                    <label><input type="radio" name="Membership" id="1openButton3" value="silver">Silver</label>
+                    <label><input type="radio" name="Membership" id="1openButton4" value="bronze">Bronze</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Description</legend>
+                    <label><textarea name="feedback" placeholder="feedback" title="business description" id="feedback"
+                            cols="50" rows="10" wrap="hard"></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Time Stamp</legend>
+                    <label>Application Date<input type="date" id="time" name="time"></label>
+                </fieldset>
+                <input type="submit" value="Register">
+
+            </form>
+        </div>
+        <h2>Uganda Chamber of commerce Membership Cards</h2>
+        <div class="Membership">
+            <div class="gold">
+                <h3>Non profit membership (free)</h3>
+                <button class="" id="openButton">View Np Card</button>
+            </div>
+            <div class="gold">
+                <h3>Gold Membership</h3>
+                <button class="" id="openButton2">View Gold Card</button>
+            </div>
+            <div class="gold">
+                <h3>Silver Membership</h3>
+                <button class="" id="openButton3">View Silver Card</button>
+            </div>
+            <div class="gold">
+                <h3>Bronze membership</h3>
+                <button class="" id="openButton4"> View Bronze Card</button>
+            </div>
+            <dialog id="mydialog">
+                <div>
+                    <h2></h2>
+                    <button id="closeButton">&times;</button>
+                </div>
+                <p></p>
+
+            </dialog>
+        </div>
+
+
+
     </main>
 
 
