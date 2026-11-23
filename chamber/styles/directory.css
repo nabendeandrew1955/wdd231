@@ -865,11 +865,11 @@ img {
  }
 
  .nabs input:required {
-     border-bottom: solid, 8px, red;
+     border-bottom: solid 8px red;
  }
 
  .nabs input:required:valid {
-     border-bottom: solid, 8px, green;
+     border-bottom: solid 8px green;
  }
 
  .form {
