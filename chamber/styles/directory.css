@@ -993,3 +993,11 @@ img {
      border: 1px solid #E07A5F;
      border-radius: 6px;
  }
+
+ /*******innerhtml imaga*******/
+ /* .custom-img {
+     width: 300px;
+     height: 200px;
+     object-fit: cover;
+     /* Prevents stretching/distortion 
+ } */

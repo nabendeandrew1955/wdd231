@@ -1,67 +1,113 @@
+/*<div class="container">
+    <article class="grid">
+        
+        
+        
+       
+                <section>
+            <h2>Beacon Marketing Agency</h2>
+            <div class="filter-container">
+                <img src="images/car-front-fill.svg" alt="" width="200" height="200">
+            </div>
+            <div class="card">
+                <h3>Address:</h3>
+                <p>321 Media Drive. </p>
+                <h3>Phone:</h3>
+                <p>(555) 012-4411</p>
+                <h3>Description:</h3>
+                <p>Deals in heavy and light power equipment as well as after sales services.</p>
+                <h3>Membership Level:</h3>
+                <p>Gold</p>
+            </div>
+            <a href="//applianceworld.co.ug/" target="_blank">Details</a>
+        </section>
+        <section>
+            <h2>Pioneer Logistics LTD"</h2>
+            <div class="filter-container">
+                <img src="images/bus-front.svg" alt="" width="200" height="200">
+            </div>
+            <div class="card">
+                <h3>Address:</h3>
+                <p>808 Freight Way</p>
+                <h3>Phone:</h3>
+                <p>(555) 011-2233</p>
+                <h3>Description:</h3>
+                <p>Deals in heavy and light power equipment as well as after sales services.</p>
+                <h3>Membership Level:</h3>
+                <p>Silver</p>
+            </div>
+            <a href="//applianceworld.co.ug/" target="_blank">Details</a>
+        </section>
+
+    </article>
+</div>
+
+/************************************************separation*/
+
 const companies = [
     {
-        "Name": "Bwindi Impenetrable National Park",
-        "Address": "Bwindi Forest, Kanungu District, Southwestern Uganda",
-        "phone": "+256 414 123456",
-        "url": "https://ugandawildlife.org/national-parks/bwindi-impenetrable-national-park",
-        "Description": "A UNESCO World Heritage Site famous for mountain gorilla trekking and one of Africa's most biodiverse rainforests",
-        "path": "images/gorilla-trekking-in-uganda.webp",
+        "Name": "Nabzo Electrical & Electronics",
+        "Address": "P.O Box 8989 Kampala",
+        "phone": "+256771652048",
+        "url": "//applianceworld.co.ug",
+        "Description": "Deals in heavy and light power equipment as well as after sales services",
+        "path": "images/camera-reels.svg",
         "membership": 3
     },
     {
-        "Name": "Murchison Falls National Park",
-        "Address": "Masindi & Nwoya Districts, Northwestern Uganda",
-        "phone": "+256 414 654321",
-        "url": "https://ugandawildlife.org/national-parks/murchison-falls-national-park",
-        "Description": "Uganda's largest national park featuring dramatic waterfalls, game drives, boat cruises, and abundant wildlife including elephants, giraffes, lions, and hippos.",
-        "path": "images/murchison-falls-national-park.webp",
+        "Name": "Housing Finance Bank",
+        "Address": "789 Capital Blvd ",
+        "phone": "+256771888755",
+        "url": "//www.housingfinance.co.ug/",
+        "Description": "First incorporated as a private limited company in 1967 as Housing Finance Company Uganda Limited, carrying out business as a non-banking credit institution providing mortgage finance and also accepting savings deposits from the public. We became licensed and regulated by Bank of Uganda as a commercial Bank in 2007 to carry on business of a banking under the Financial Institutions Act and changed into a public limited liability company known as Housing Finance Bank Limited.",
+        "path": "images/bank.svg",
         "membership": 2
     },
 
     {
-        "Name": "Lake Victoria",
-        "Address": "Lake Victoria, East Africa",
-        "phone": "+256 414 123456",
-        "url": "https://ugandawildlife.org/lakes/lake-victoria",
-        "Description": "The world's largest tropical lake, known for its rich biodiversity and vibrant aquatic life.",
-        "path": "images/source-of-the-nile.webp",
+        "Name": "New Master Electronics LTD",
+        "Address": "Kampala, Bombo Road",
+        "phone": "+256791335447",
+        "url": "//lyvecity.com/@new_master_electronics/gallery",
+        "Description": "Located in the bustling hub of Kampala on Ben Kiwanuka Rd, New Master Electronics stands as a trusted destination for electronic needs. With a commendable rating of 4.3 from 60 Google reviews, @new_master_electronics has earned a reputation for reliable products and attentive customer service. The store’s vibrant ambiance, marked by an array of gadgets, caters to tech enthusiasts seeking quality and variety. Customers appreciate the knowledgeable staff, who are always ready to assist and offer insightful advice. For those in Kampala, @new_master_electronics is a go-to spot for a diverse selection of electronics. #KampalaElectronics.",
+        "path": "images/broadcast-pin.svg",
         "membership": 3
     },
 
     {
-        "Name": "Source of the Nile",
-        "Address": "Source of the Nile Gardens, Jinja, Uganda",
-        "phone": "+256 414 123456",
-        "url": "https://ugandawildlife.org/rivers/source-of-the-nile",
-        "Description": "The historic source of the world's longest river, offering boat rides, kayaking, rafting, and scenic river views.",
-        "path": "images/source-of-the-nile.webp",
+        "Name": "Green Garden Cafe`",
+        "Address": "456 Kampala uganda",
+        "phone": "(555) 014-5566",
+        "url": "//wanderboat.ai/chat",
+        "Description": "Deals in foods and beverages.",
+        "path": "images/cup-hot-fill.svg",
         "membership": 1
     },
     {
-        "Name": "Queen Elizabeth National Park",
-        "Address": "Kasese, Rubirizi, Rukungiri & Kamwenge Districts, Western Uganda",
-        "phone": "+256 414 123456",
-        "url": "https://ugandawildlife.org/national-parks/queen-elizabeth-national-park",
-        "Description": "One of Uganda's most visited parks, known for tree-climbing lions, boat safaris on the Kazinga Channel, and diverse wildlife",
-        "path": "images/queen-elizabeth-park.webp",
+        "Name": "Star Light Hotel Mbale",
+        "Address": "46 Wanale Road, Mbale Uganda",
+        "phone": "(555) 015-9900",
+        "url": "//www.tripadvisor.com/Hotel_Review-g668276-d4823716-Reviews-Starlight_Hotel_Mbale-Mbale_Eastern_Region.html/",
+        "Description": "The hotel was very tranquil with lovely well manicured gardens and a quiet space, the rooms were clean and well maintained, the food is good and the service was quick. It is an ideal hotel for those travellers that appreciate peace and quiet.",
+        "path": "images/stars.svg",
         "membership": 3
     },
     {
-        "Name": "Kibale National Park",
-        "Address": "Fort Portal, Kabarole District, Western Uganda",
-        "phone": "+256 414 123456",
-        "url": "https://ugandawildlife.org/national-parks/kibale-national-park",
-        "Description": "A tropical rainforest famous for chimpanzee trekking and home to over 13 species of primates.",
-        "path": "images/kibale-park.webp",
+        "Name": "Uganda Safari Travel Agency",
+        "Address": "321 Media Drive",
+        "phone": "(555) 012-4411",
+        "url": "//treksafarisuganda.com/uganda-safari/?gad_source=1&gad_campaignid=23757584806&gbraid=0AAAABDYr0cL7lwJSnyYw4S1Etn3U7Zp5d&gclid=CjwKCAiAzp_YBhAJEiwASf8kHSSFUjc-_Y_QWjjzz7uLgRG3IXvveLf6OEX6t5Ud0hkaEqJ90MAkZxoCMjEQAvD_BwE",
+        "Description": "Plan a tailor-made Uganda safari with gorilla trekking, chimpanzee tracking, and wildlife experiences across Ugandas top national parks, designed around your travel dates and preferences..",
+        "path": "images/car-front-fill.svg",
         "membership": 2
     },
     {
-        "Name": "Lake Bunyonyi",
-        "Address": "Kabale District, Southwestern Uganda",
-        "phone": "+256 414 123456",
-        "url": "https://ugandawildlife.org/lakes/lake-bunyonyi",
-        "Description": "A beautiful freshwater lake with 29 islands, ideal for canoeing, birdwatching, swimming, and relaxation.",
-        "path": "images/lake-bunyonyi.webp",
+        "Name": "Pioneer Easy Bus LTD",
+        "Address": "Plot 31, Mpanga Close, Off Luthuli Lane, Bugolobi, Kampala,",
+        "phone": "+256 414 373722",
+        "url": "//www.246african.com/listing/pioneer-easy-bus-limited/",
+        "Description": "Pioneer Easy Bus Limited is Ugandas premier bus company providing integrated passenger bus services in Greater Kampala Metropolitan Area",
+        "path": "images/bus-front.svg",
         "membership": 1
     }
 ]
@@ -115,7 +161,7 @@ async function loadCompanies() {
         cardContent.innerHTML = ` 
                         <img 
                    src="${company.path}" 
-                            alt="${company.Name} logo"
+                            alt="${company.Name} logo" style="width: ${200}px; height: auto;
                             onerror="this.onerror=null; this.src='https://placehold.co/400x300?text=${encodeURIComponent(company.Name)}';"
                         >
                         <div class="card-content">
