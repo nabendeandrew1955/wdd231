@@ -46,7 +46,7 @@
 
 const companies = [
     {
-        "Name": "Nabzo Electrical & Electronics",
+        "Name": "Nabzo Electrical & Electronics LTD",
         "Address": "P.O Box 8989 Kampala",
         "phone": "+256771652048",
         "url": "//applianceworld.co.ug",
