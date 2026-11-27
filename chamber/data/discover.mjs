@@ -1,6 +1,6 @@
 
 export const path = ""
-export const companies = [
+export const places = [
     {
         "Name": "Bwindi Impenetrable National Park",
         "Address": "Bwindi Forest, Kanungu District, Southwestern Uganda",
@@ -19,7 +19,7 @@ export const companies = [
         "path": "images/murchison-falls-national-park.webp",
         "membership": 2
     },
-    
+
     {
         "Name": "Lake Victoria",
         "Address": "Lake Victoria, East Africa",
@@ -29,7 +29,7 @@ export const companies = [
         "path": "images/source-of-the-nile.webp",
         "membership": 3
     },
-    
+
     {
         "Name": "Source of the Nile",
         "Address": "Source of the Nile Gardens, Jinja, Uganda",
@@ -65,6 +65,19 @@ export const companies = [
         "Description": "A beautiful freshwater lake with 29 islands, ideal for canoeing, birdwatching, swimming, and relaxation.",
         "path": "images/lake-bunyonyi.webp",
         "membership": 1
+    },
+    {
+        "Name": "Kasubi Tombs",
+        "Address": "Kasubi Hill, Kampala, Uganda",
+        "Description": "The royal burial grounds of the Buganda Kings and an important UNESCO World Heritage cultural site.",
+        "path": "images/kasubi-tombs.webp"
+    },
+
+    {
+        "Name": "Rwenzori Mountains National Park",
+        "Address": "Kasese District, Western Uganda",
+        "Description": "A UNESCO World Heritage Site offering spectacular hiking through glaciers, alpine vegetation, and Africa's third-highest mountain range.",
+        "path": "images/rwenzori-national-park.webp"
     }
 ]
 

@@ -1,6 +1,6 @@
 
-import { companies } from "../data/discover.mjs";
-//console.log(companies)
+import {companies} from "../data/discover.mjs";
+//console.log(places)
 
 const gridContainer = document.getElementById('company-grid');
 
@@ -20,12 +20,12 @@ function getMembershipDetails(level) {
 
 
 // Fetch and display the JSON data
-async function loadCompanies() {
+async function loadcompanies() {
     try {
         const response = await fetch('companies.json');
 
         if (response.ok) {
-            const companies = await response.json();
+            const places = await response.json();
             //console.log(data); // testing only
             displayResults(companies); // uncomment when ready
         } else {
@@ -35,7 +35,7 @@ async function loadCompanies() {
         console.log(error);
     }
 
-    // const companies = await response.json();
+     //const places = await response.json();
 
     // Limit to  companies and generate HTML for each
     companies.slice(0, 7).forEach(company => {
