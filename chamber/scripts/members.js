@@ -1,26 +1,5 @@
 /*<div class="container">
     <article class="grid">
-        
-        
-        
-       
-                <section>
-            <h2>Beacon Marketing Agency</h2>
-            <div class="filter-container">
-                <img src="images/car-front-fill.svg" alt="" width="200" height="200">
-            </div>
-            <div class="card">
-                <h3>Address:</h3>
-                <p>321 Media Drive. </p>
-                <h3>Phone:</h3>
-                <p>(555) 012-4411</p>
-                <h3>Description:</h3>
-                <p>Deals in heavy and light power equipment as well as after sales services.</p>
-                <h3>Membership Level:</h3>
-                <p>Gold</p>
-            </div>
-            <a href="//applianceworld.co.ug/" target="_blank">Details</a>
-        </section>
         <section>
             <h2>Pioneer Logistics LTD"</h2>
             <div class="filter-container">
