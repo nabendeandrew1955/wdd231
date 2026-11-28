@@ -1001,3 +1001,39 @@ img {
      object-fit: cover;
      /* Prevents stretching/distortion 
  } */
+
+ /*********** action on javascript element company-grid ******/
+
+ #company-grid div {
+    margin: 1 rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "Name"
+    "photo"
+    "Address"
+    "Description";
+ }
+
+ #company-grid h2 {
+    margin: 1rem 10px;
+    grid-area: Name;
+ }
+
+ #company-grid img {
+    width: 100%;
+    grid-area: photo;
+ }
+
+ #company-grid div p {
+    margin: 1rem 10px;
+    grid-area: Description;
+ }
+
+ #company-grid div address {
+    margin: 1rem 10px;
+    grid-area: Address;
+ }

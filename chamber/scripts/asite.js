@@ -1,9 +1,12 @@
 
-import { places } from "../data/discover.mjs";
+import {places} from "../data/discover.mjs";
 //console.log(places)
 
 
-const gridContainer = document.getElementById('company-grid');
+// const gridContainer = document.getElementById('company-grid');
+const gridContainer = document.createElement('#company-grid');
+
+
 
 // Helper function to map membership numbers to labels and CSS classes
 function getMembershipDetails(level) {
