@@ -927,7 +927,7 @@ img {
      background-color: goldenrod;
  }
 
- */::backdrop {
+ ::backdrop {
      background-color: rgba(61, 138, 143, 0.758);
  }
 

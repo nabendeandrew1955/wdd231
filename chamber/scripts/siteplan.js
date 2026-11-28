@@ -13,7 +13,7 @@
 //     //     //   displayItems(data.machines); // note that you reference the prophets array of the JSON data object, not just the object
 // }
 
-import {places} from "../data/discover.mjs";
+import { places } from "../data/discover.mjs";
 //console.log(places)
 
 
@@ -52,42 +52,53 @@ async function loadplaces() {
 
     // const companies = await response.json();
 
-    // Limit to  companies and generate HTML for each
-    places.slice(0, 10).forEach(place => {
-        const membership = getMembershipDetails(place.membership);
-
-        const card = document.createElement('article');
-        card.className = 'card';
-        // mine
-        const cardContent = document.createElement('section');
-
-        // Note: Assumes images are stored in an 'images/' folder. 
-        // Includes an onerror fallback placeholder if the local image doesn't exist yet.
-        cardContent.innerHTML = ` 
-                        <img 
-                   src="${place.path}" 
-                            alt="${place.Name} logo" 
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x300?text=${encodeURIComponent(place.Name)}';"
-                        >
-                        <div class="card-content">
-                            <div class="card-header">
-                                <h2>${place.Name}</h2>
-                                <span class="badge ${membership.className}">${membership.label}</span>
-                            </div>
-                            <ul class="info-list">
-                                <li><strong>Name:</strong> ${place.Name}</li>
-                                <li><strong>Address:</strong> ${place.Address}</li>
-                                 <li><strong>Phone:</strong> ${place.phone}</li>
-                            </ul>
-                        </div>
-                    
-                    `;
+    //second code
 
 
-        card.appendChild(cardContent)
-        gridContainer.appendChild(card);
-    });
+    
+        
+
+    
+
+
+  // Limit to  companies and generate HTML for each
+  places.slice(0, 10).forEach(place => {
+      const membership = getMembershipDetails(place.membership);
+
+      const card = document.createElement('div');
+      card.className = 'card';
+      // mine
+      const cardContent = document.createElement('section');
+
+      // Note: Assumes images are stored in an 'images/' folder. 
+      // Includes an onerror fallback placeholder if the local image doesn't exist yet.
+      cardContent.innerHTML = ` 
+                      <img 
+                 src="${place.path}" 
+                          alt="${place.Name} logo" 
+                          onerror="this.onerror=null; this.src='https://placehold.co/400x300?text=${encodeURIComponent(place.Name)}';"
+                      >
+                      <div class="card-content">
+                          <div class="card-header">
+                              <h2>${place.Name}</h2>
+                              <span class="badge ${membership.className}">${membership.label}</span>
+                          </div>
+                          <ul class="info-list">
+                              <li><strong>Name:</strong> ${place.Name}</li>
+                              <li><strong>Address:</strong> ${place.Address}</li>
+                               <li><strong>Phone:</strong> ${place.phone}</li>
+                          </ul>
+                          <a href="${place.url}" target="_blank" rel="noopener noreferrer" class="btn-website">
+                              Learn More</a>
+                      </div>
+                  
+                  `;
+
+
+      card.appendChild(cardContent)
+      gridContainer.appendChild(card);
+  });
 }
 
 
-loadplaces();
+loadplaces(); 
