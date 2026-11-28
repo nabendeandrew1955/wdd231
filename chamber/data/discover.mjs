@@ -69,6 +69,8 @@ export const places = [
     {
         "Name": "Kasubi Tombs",
         "Address": "Kasubi Hill, Kampala, Uganda",
+        "phone": "0704031568",
+        "url": "//visitkampala.kcca.go.ug/business_details/kasubi-royal-tombs",
         "Description": "The royal burial grounds of the Buganda Kings and an important UNESCO World Heritage cultural site.",
         "path": "images/kasubi-tombs.webp"
     },
@@ -76,6 +78,8 @@ export const places = [
     {
         "Name": "Rwenzori Mountains National Park",
         "Address": "Kasese District, Western Uganda",
+        "phone": "+256414355000",
+        "url": "//ugandawildlife.org/national-parks/rwenzori-mountains",
         "Description": "A UNESCO World Heritage Site offering spectacular hiking through glaciers, alpine vegetation, and Africa's third-highest mountain range.",
         "path": "images/rwenzori-national-park.webp"
     }
